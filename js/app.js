@@ -93,9 +93,12 @@ function renderMeta(model, intel) {
 function renderExec(intel) {
   const e = intel.executive;
   const winner = e.predicted_winner_short || e.predicted_winner;
+  const headlineHtml = e.headline
+    ? `<span class="muted small" style="display:inline-block;margin-left:6px;">${e.headline}</span>`
+    : '';
   $('#exec-headline').innerHTML =
-    `Predicted winner: <span class="predicted-winner">${winner}</span> · ${e.probability_pct}% · ` +
-    `<span class="muted small" style="display:inline-block;margin-left:6px;">${e.headline}</span>`;
+    `Predicted winner: <span class="predicted-winner">${winner}</span> · ${e.probability_pct}%` +
+    (headlineHtml ? ' ' + headlineHtml : '');
   $('#exec-subhead').textContent = e.subhead;
   $('#confidence-value').textContent = intel.meta.confidence_level || '—';
 }
