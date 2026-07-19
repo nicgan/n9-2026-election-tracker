@@ -1,0 +1,656 @@
+/* ============================================================
+   Negeri Sembilan 2026 Election Intelligence Dashboard
+   Art direction: broadsheet newsroom — deep ink, warm paper,
+   editorial serif titles, precise mono numerics, party colors
+   ============================================================ */
+
+:root {
+  /* Type scale (fluid) */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+  --text-sm: clamp(0.8125rem, 0.78rem + 0.2vw, 0.9375rem);
+  --text-base: clamp(0.9375rem, 0.9rem + 0.25vw, 1.0625rem);
+  --text-lg: clamp(1.0625rem, 1rem + 0.4vw, 1.3125rem);
+  --text-xl: clamp(1.375rem, 1.2rem + 0.75vw, 1.875rem);
+  --text-2xl: clamp(1.875rem, 1.5rem + 1.5vw, 2.75rem);
+
+  /* Spacing */
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+  --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+  --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+  --space-16: 4rem; --space-20: 5rem;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* Fonts */
+  --font-serif: 'Fraunces', 'Times New Roman', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Menlo', 'Consolas', monospace;
+
+  /* Transitions */
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --content-wide: 1360px;
+}
+
+/* Dark (default) — deep newsprint ink */
+:root, [data-theme="dark"] {
+  --color-bg: #0e1218;
+  --color-surface: #151b23;
+  --color-surface-2: #1a2029;
+  --color-surface-offset: #1e252f;
+  --color-border: #2a3340;
+  --color-divider: #232b36;
+
+  --color-text: #e8e2d3;         /* warm cream */
+  --color-text-muted: #a8a396;
+  --color-text-faint: #6a6759;
+
+  --color-primary: #d4a574;       /* warm gold (broadsheet flag accent) */
+  --color-primary-hover: #e8b788;
+  --color-primary-highlight: #2d251b;
+
+  --color-red: #e04a5c;           /* alerts, negative sentiment */
+  --color-green: #52a86f;         /* positive sentiment */
+  --color-amber: #d19949;         /* neutral/warning */
+
+  /* Party colors — grounded in Malaysian political convention */
+  --color-ph: #d3212d;            /* PH red (Reformasi) */
+  --color-ph-tint: #3a1a1e;
+  --color-bn: #1f78d1;            /* BN blue (with dacing) */
+  --color-bn-tint: #14283f;
+  --color-pn: #4a7fa8;            /* PN darker blue-teal (PAS moon area) */
+  --color-pn-tint: #172833;
+  --color-bersatu: #7a4bb0;       /* Bersatu purple (party flag element) */
+  --color-bersatu-tint: #241a34;
+  --color-other: #8a8a8a;
+
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.28);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.42);
+}
+
+[data-theme="light"] {
+  --color-bg: #f5f0e6;             /* newsprint cream */
+  --color-surface: #ffffff;
+  --color-surface-2: #faf6ec;
+  --color-surface-offset: #ede6d6;
+  --color-border: #c9c0a8;
+  --color-divider: #dcd3bd;
+
+  --color-text: #1a1c20;
+  --color-text-muted: #58554b;
+  --color-text-faint: #8a8574;
+
+  --color-primary: #8a5a1e;
+  --color-primary-hover: #6d4515;
+  --color-primary-highlight: #ede6d6;
+
+  --color-red: #c22537;
+  --color-green: #2e7d4a;
+  --color-amber: #b57a1a;
+
+  --color-ph: #c22537;
+  --color-ph-tint: #f5d9dc;
+  --color-bn: #1160a8;
+  --color-bn-tint: #d8e6f2;
+  --color-pn: #34627e;
+  --color-pn-tint: #d3e0e7;
+  --color-bersatu: #5f3488;
+  --color-bersatu-tint: #e2d6ec;
+  --color-other: #6f6f6f;
+
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.14);
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100dvh;
+}
+
+/* Typography */
+h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; }
+h1 { font-size: var(--text-2xl); }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); font-weight: 600; }
+h4 { font-size: var(--text-base); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0; }
+.mono { font-family: var(--font-mono); font-feature-settings: "tnum" 1; }
+.small { font-size: var(--text-sm); }
+.xs { font-size: var(--text-xs); }
+.muted { color: var(--color-text-muted); }
+.faint { color: var(--color-text-faint); }
+
+/* Layout */
+.page {
+  max-width: var(--content-wide);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-16);
+}
+@media (min-width: 768px) {
+  .page { padding: var(--space-8) var(--space-8) var(--space-20); }
+}
+
+/* Header — masthead */
+.masthead {
+  border-bottom: 2px double var(--color-border);
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+.masthead-top {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: var(--space-4); flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-divider);
+  margin-bottom: var(--space-4);
+}
+.masthead-top .meta-cluster {
+  display: flex; gap: var(--space-4); flex-wrap: wrap;
+}
+.masthead-top .live-badge {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  color: var(--color-red); font-weight: 600;
+}
+.masthead-top .live-badge::before {
+  content: "●"; animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+
+.masthead-title {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: var(--space-6); flex-wrap: wrap;
+}
+.masthead h1 {
+  font-size: clamp(1.75rem, 1.2rem + 2.2vw, 2.75rem);
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.masthead h1 .subtitle {
+  display: block;
+  font-size: var(--text-base);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+.masthead-actions {
+  display: flex; gap: var(--space-2); align-items: center;
+}
+.icon-btn {
+  width: 36px; height: 36px;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--color-text-muted);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transition: var(--transition);
+}
+.icon-btn:hover { color: var(--color-primary); border-color: var(--color-primary); }
+
+/* Executive summary — hero KPIs */
+.exec-summary {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-8);
+  box-shadow: var(--shadow-md);
+}
+@media (max-width: 900px) {
+  .exec-summary { grid-template-columns: 1fr; }
+}
+.exec-headline {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  line-height: 1.25;
+  margin-bottom: var(--space-3);
+}
+.exec-headline .predicted-winner {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.exec-summary .metric-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+.metric {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+}
+.metric .label {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+}
+.metric .value {
+  font-family: var(--font-mono);
+  font-size: var(--text-xl);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.metric .value.small { font-size: var(--text-lg); }
+
+/* Section blocks */
+section.block {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+section.block > header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: var(--space-3); flex-wrap: wrap;
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-5);
+  border-bottom: 1px solid var(--color-divider);
+}
+section.block h2 {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+section.block .section-tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  letter-spacing: 0.08em;
+}
+section.block .section-note {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+  font-style: italic;
+}
+
+/* Grid for two-column layouts */
+.two-col {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);
+}
+.three-col {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4);
+}
+@media (max-width: 900px) {
+  .two-col, .three-col { grid-template-columns: 1fr; }
+}
+
+/* Party badges & colors */
+.party-badge {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.party-PH      { background: var(--color-ph-tint); color: var(--color-ph); }
+.party-BN      { background: var(--color-bn-tint); color: var(--color-bn); }
+.party-PN      { background: var(--color-pn-tint); color: var(--color-pn); }
+.party-BERSATU { background: var(--color-bersatu-tint); color: var(--color-bersatu); }
+.party-OTHER   { background: var(--color-surface-offset); color: var(--color-other); }
+.party-BN\+PN  { background: linear-gradient(90deg,var(--color-bn-tint),var(--color-pn-tint)); color: var(--color-bn); }
+
+/* Data tables */
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+table.data th, table.data td {
+  padding: var(--space-2) var(--space-3);
+  text-align: left;
+  border-bottom: 1px solid var(--color-divider);
+  vertical-align: middle;
+}
+table.data thead th {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  padding-top: var(--space-1); padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  background: transparent;
+}
+table.data td.num, table.data th.num { text-align: right; font-family: var(--font-mono); font-feature-settings: "tnum" 1; }
+table.data tr:hover td { background: var(--color-surface-2); }
+
+/* Probability bar */
+.prob-bar {
+  display: flex;
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--color-surface-offset);
+}
+.prob-bar > span { display: block; height: 100%; }
+.prob-bar > span.PH { background: var(--color-ph); }
+.prob-bar > span.BN { background: var(--color-bn); }
+.prob-bar > span.PN { background: var(--color-pn); }
+.prob-bar > span.BERSATU { background: var(--color-bersatu); }
+.prob-bar > span.OTHER { background: var(--color-other); }
+
+/* Stacked govt-probability visualisation */
+.gov-prob {
+  display: flex; flex-direction: column; gap: var(--space-3);
+}
+.gov-prob-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 60px;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+}
+.gov-prob-row .track {
+  height: 12px; border-radius: 999px; overflow: hidden;
+  background: var(--color-surface-offset);
+}
+.gov-prob-row .track > .fill {
+  height: 100%; transition: width 400ms cubic-bezier(0.16,1,0.3,1);
+}
+.gov-prob-row .track > .fill.PH { background: var(--color-ph); }
+.gov-prob-row .track > .fill.\BN\+PN, .gov-prob-row .track > .fill.BNPN { background: linear-gradient(90deg,var(--color-bn),var(--color-pn)); }
+.gov-prob-row .track > .fill.Hung { background: var(--color-amber); }
+
+/* Seat heat-map */
+.heat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--space-2);
+}
+.heat-cell {
+  padding: var(--space-3);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  border-left-width: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+.heat-cell:hover { border-color: var(--color-primary); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.heat-cell.leader-PH { border-left-color: var(--color-ph); }
+.heat-cell.leader-BN { border-left-color: var(--color-bn); }
+.heat-cell.leader-PN { border-left-color: var(--color-pn); }
+.heat-cell.leader-BERSATU { border-left-color: var(--color-bersatu); }
+.heat-cell .code {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+}
+.heat-cell .name {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  margin: 2px 0 4px;
+}
+.heat-cell .prob {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+.heat-cell .class-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-2);
+  font-weight: 600;
+}
+.class-Safe            { background: rgba(82,168,111,0.16); color: var(--color-green); }
+.class-Likely          { background: rgba(82,168,111,0.10); color: var(--color-green); }
+.class-Lean            { background: rgba(209,153,73,0.16); color: var(--color-amber); }
+.class-Toss-up         { background: rgba(224,74,92,0.14); color: var(--color-red); }
+.class-Too\ Close\ to\ Call { background: rgba(224,74,92,0.20); color: var(--color-red); }
+
+/* Momentum + sentiment */
+.momentum-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-3);
+}
+.momentum-card {
+  padding: var(--space-4);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-2);
+}
+.momentum-card .party { margin-bottom: var(--space-2); }
+.momentum-card .rating {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+.rating-vp { color: var(--color-green); }
+.rating-p  { color: var(--color-green); opacity: 0.75; }
+.rating-n  { color: var(--color-text-muted); }
+.rating-neg{ color: var(--color-red); opacity: 0.85; }
+.rating-vn { color: var(--color-red); }
+
+.sentiment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-3);
+}
+.sentiment-cell {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+}
+.sentiment-platform {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+}
+.sentiment-row {
+  display: flex; justify-content: space-between;
+  font-size: var(--text-xs);
+  padding: 2px 0;
+  border-bottom: 1px dotted var(--color-divider);
+}
+.sentiment-row:last-child { border-bottom: none; }
+.sent-pos { color: var(--color-green); font-weight: 600; }
+.sent-neu { color: var(--color-text-muted); }
+.sent-neg { color: var(--color-red); font-weight: 600; }
+
+/* Narrative + candidate lists */
+.narrative-list, .risk-list, .candidate-list {
+  display: flex; flex-direction: column; gap: var(--space-2);
+}
+.narrative-item, .risk-item, .candidate-item {
+  padding: var(--space-3);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-primary);
+}
+.narrative-item.trending-up   { border-left-color: var(--color-green); }
+.narrative-item.trending-down { border-left-color: var(--color-red); }
+.narrative-item.trending-flat { border-left-color: var(--color-amber); }
+.risk-item.high { border-left-color: var(--color-red); }
+.risk-item.med  { border-left-color: var(--color-amber); }
+.risk-item.low  { border-left-color: var(--color-text-faint); }
+
+/* Change log */
+.changelog {
+  display: flex; flex-direction: column; gap: var(--space-3);
+  max-height: 480px; overflow-y: auto;
+  padding-right: var(--space-2);
+}
+.log-entry {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+.log-entry .timestamp {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+}
+.log-entry .summary { font-size: var(--text-sm); }
+
+/* Callout for uncertainty */
+.callout {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-primary-highlight);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  margin: var(--space-4) 0;
+  color: var(--color-text);
+}
+.callout strong { color: var(--color-primary); }
+
+/* Footer */
+footer.masthead-foot {
+  margin-top: var(--space-12);
+  padding-top: var(--space-6);
+  border-top: 2px double var(--color-border);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+footer .disclaimer {
+  max-width: 640px; margin: 0 auto;
+  font-size: var(--text-xs);
+  font-style: italic;
+  color: var(--color-text-faint);
+  margin-top: var(--space-3);
+}
+
+/* Anchors */
+.anchor-nav {
+  position: sticky; top: 0;
+  z-index: 40;
+  padding: var(--space-2) 0;
+  margin-bottom: var(--space-4);
+  background: color-mix(in oklab, var(--color-bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-divider);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.anchor-nav::-webkit-scrollbar { display: none; }
+.anchor-nav ul {
+  display: flex; gap: var(--space-1); list-style: none;
+  padding: 0 var(--space-1);
+  min-width: max-content;
+}
+.anchor-nav a {
+  display: inline-block;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-xs);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition: var(--transition);
+}
+.anchor-nav a:hover { color: var(--color-primary); background: var(--color-surface); }
+
+/* Ranked-choice / party list card */
+.party-rank-list {
+  display: flex; flex-direction: column; gap: var(--space-2);
+}
+.party-rank-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 80px;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-divider);
+}
+.party-rank-row .num {
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+/* Demographic bars */
+.demo-row {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-divider);
+  font-size: var(--text-sm);
+}
+.demo-row .label { font-weight: 500; }
+.demo-row .drivers { color: var(--color-text-muted); font-size: var(--text-xs); font-style: italic; }
+.demo-row:last-child { border-bottom: none; }
+
+/* Prob change chip */
+.chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+}
+.chip.up   { color: var(--color-green); background: rgba(82,168,111,0.14); }
+.chip.down { color: var(--color-red); background: rgba(224,74,92,0.14); }
+.chip.flat { color: var(--color-text-muted); background: var(--color-surface-offset); }
+
+/* Skeleton loader */
+.skeleton {
+  height: 14px;
+  background: linear-gradient(90deg, var(--color-surface-2) 0%, var(--color-surface-offset) 50%, var(--color-surface-2) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: var(--radius-sm);
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

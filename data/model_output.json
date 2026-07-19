@@ -1,0 +1,1251 @@
+{
+  "meta": {
+    "generated_at": "2026-07-19T10:50:39.065824+08:00",
+    "polling_day": "2026-08-01",
+    "days_to_polling": 12,
+    "swing_vs_2023": {
+      "PH": {
+        "malay_rural": -0.1,
+        "malay_majority": -0.08,
+        "mixed_malay": -0.05,
+        "mixed_chinese": -0.02,
+        "chinese_majority": -0.03,
+        "indian_influence": -0.02
+      },
+      "BN": {
+        "malay_rural": 0.05,
+        "malay_majority": 0.08,
+        "mixed_malay": 0.06,
+        "mixed_chinese": 0.04,
+        "chinese_majority": 0.03,
+        "indian_influence": 0.04
+      },
+      "PN": {
+        "malay_rural": -0.02,
+        "malay_majority": -0.01,
+        "mixed_malay": -0.03,
+        "mixed_chinese": -0.02,
+        "chinese_majority": -0.02,
+        "indian_influence": -0.02
+      },
+      "BERSATU": {
+        "malay_rural": 0.04,
+        "malay_majority": 0.03,
+        "mixed_malay": 0.03,
+        "mixed_chinese": 0.02,
+        "chinese_majority": 0.01,
+        "indian_influence": 0.02
+      }
+    },
+    "regional_swing_sd": 0.03,
+    "seat_specific_sd": 0.04,
+    "incumbent_bonus": 0.02,
+    "star_bonus": 0.03,
+    "n_simulations": 10000
+  },
+  "government_probability": {
+    "PH": 0.0487,
+    "BN+PN": 0.9513,
+    "Hung/Other": 0.0
+  },
+  "coalition_seat_stats": {
+    "PH": {
+      "mean": 16.1677,
+      "median": 16,
+      "p10": 14,
+      "p90": 18,
+      "min": 12,
+      "max": 20,
+      "p_majority": 0.0487
+    },
+    "BN": {
+      "mean": 15.2303,
+      "median": 15,
+      "p10": 14,
+      "p90": 16,
+      "min": 12,
+      "max": 18,
+      "p_majority": 0.0
+    },
+    "PN": {
+      "mean": 4.602,
+      "median": 4,
+      "p10": 4,
+      "p90": 6,
+      "min": 4,
+      "max": 7,
+      "p_majority": 0.0
+    },
+    "BERSATU": {
+      "mean": 0.0,
+      "median": 0,
+      "p10": 0,
+      "p90": 0,
+      "min": 0,
+      "max": 0,
+      "p_majority": 0.0
+    },
+    "OTHER": {
+      "mean": 0.0,
+      "median": 0,
+      "p10": 0,
+      "p90": 0,
+      "min": 0,
+      "max": 0,
+      "p_majority": 0.0
+    },
+    "BN+PN": {
+      "mean": 19.8323,
+      "median": 20,
+      "p10": 18,
+      "p90": 22,
+      "min": 16,
+      "max": 24,
+      "p_majority": 0.8423
+    }
+  },
+  "seats": [
+    {
+      "code": "N01",
+      "name": "Chennah",
+      "parl": "Jelebu",
+      "ethnic": "mixed_chinese",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.187,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Anthony Loke",
+          "incumbent": true,
+          "star": true
+        },
+        {
+          "party": "BN",
+          "name": "Siow Kong Choon",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N02",
+      "name": "Pertang",
+      "parl": "Jelebu",
+      "ethnic": "malay_rural",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.246,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Umry Abdul Khois",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Jalaluddin Alias",
+          "incumbent": true,
+          "star": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Faizal Fadli",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N03",
+      "name": "Sungai Lui",
+      "parl": "Jelebu",
+      "ethnic": "malay_rural",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.038,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Zainal Fikri",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Razi Ali",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Mazrulhisham",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N04",
+      "name": "Klawang",
+      "parl": "Jelebu",
+      "ethnic": "malay_rural",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.063,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Bakri Sawir",
+          "incumbent": true
+        },
+        {
+          "party": "PN",
+          "name": "Danni Rais",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "Adib Musa",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PN": 1.0
+      },
+      "leader": "PN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N05",
+      "name": "Serting",
+      "parl": "Jempol",
+      "ethnic": "malay_majority",
+      "y2023_winner": "PN",
+      "y2023_maj_pct": 0.041,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Yaacob Mahmood",
+          "incumbent": false
+        },
+        {
+          "party": "PN",
+          "name": "Fairuz Isa",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Noraffendy Salleh",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PN": 1.0
+      },
+      "leader": "PN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N06",
+      "name": "Palong",
+      "parl": "Jempol",
+      "ethnic": "malay_rural",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.036,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Zahin Zinal Abidin",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Mustapha Nagoor",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Rebin Birham",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N07",
+      "name": "Jeram Padang",
+      "parl": "Jempol",
+      "ethnic": "mixed_malay",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.089,
+      "contest": "4-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "G Manivannan",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Zaidy Abdul Kadir",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Sri Sanjeevan",
+          "incumbent": false
+        },
+        {
+          "party": "ASLI",
+          "name": "Dayana Dal",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 0.7908,
+        "PH": 0.2092
+      },
+      "leader": "BN",
+      "leader_prob": 0.7908,
+      "classification": "Likely"
+    },
+    {
+      "code": "N08",
+      "name": "Bahau",
+      "parl": "Jempol",
+      "ethnic": "chinese_majority",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.606,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Teo Kok Seong",
+          "incumbent": true,
+          "star": true
+        },
+        {
+          "party": "BN",
+          "name": "Chong Fui Ming",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N09",
+      "name": "Lenggeng",
+      "parl": "Seremban",
+      "ethnic": "mixed_malay",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.032,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Zarinna Abu Zarin",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Asna Amin",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Zool Amali",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 0.8008,
+        "PH": 0.1992
+      },
+      "leader": "BN",
+      "leader_prob": 0.8008,
+      "classification": "Likely"
+    },
+    {
+      "code": "N10",
+      "name": "Nilai",
+      "parl": "Seremban",
+      "ethnic": "mixed_chinese",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.322,
+      "contest": "5-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "J Arul Kumar",
+          "incumbent": true
+        },
+        {
+          "party": "BN",
+          "name": "Lai Chien Kong",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "V Saravana",
+          "incumbent": false
+        },
+        {
+          "party": "BERJASA",
+          "name": "Zamani Ibrahim",
+          "incumbent": false
+        },
+        {
+          "party": "IND",
+          "name": "Omar Mohd Isa",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N11",
+      "name": "Lobak",
+      "parl": "Seremban",
+      "ethnic": "chinese_majority",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.746,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Chew Seh Yong",
+          "incumbent": true
+        },
+        {
+          "party": "PN",
+          "name": "P Kumar",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N12",
+      "name": "Temiang",
+      "parl": "Seremban",
+      "ethnic": "chinese_majority",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.328,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Ho Weng Wah",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Leaw Kok Chan",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "Fazly Hamid",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N13",
+      "name": "Sikamat",
+      "parl": "Seremban",
+      "ethnic": "mixed_malay",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.115,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Nor Azman Mohamad",
+          "incumbent": false
+        },
+        {
+          "party": "PN",
+          "name": "Razali Abu Samah",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "Tun Faisal Ismail",
+          "incumbent": false,
+          "star": true
+        }
+      ],
+      "probs": {
+        "PH": 0.8357,
+        "PN": 0.1643
+      },
+      "leader": "PH",
+      "leader_prob": 0.8357,
+      "classification": "Likely"
+    },
+    {
+      "code": "N14",
+      "name": "Ampangan",
+      "parl": "Seremban",
+      "ethnic": "mixed_malay",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.019,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Nazri Kassim",
+          "incumbent": false
+        },
+        {
+          "party": "PN",
+          "name": "Rafie Ab Malek",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "Noor Azah Harun",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PN": 0.1536,
+        "PH": 0.8464
+      },
+      "leader": "PH",
+      "leader_prob": 0.8464,
+      "classification": "Likely"
+    },
+    {
+      "code": "N15",
+      "name": "Juasseh",
+      "parl": "Kuala Pilah",
+      "ethnic": "malay_rural",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.008,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Aidil Abdullah",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Ismail Lasim",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Zuhaimi Md Yusof",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N16",
+      "name": "Seri Menanti",
+      "parl": "Kuala Pilah",
+      "ethnic": "malay_rural",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.038,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Kamarul Arifin Wafa",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Sufian Maradzi",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Megat Shahriman",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N17",
+      "name": "Senaling",
+      "parl": "Kuala Pilah",
+      "ethnic": "malay_rural",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.078,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Hanis Alimin",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Qayyum Abd Jalil",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "Izaffi Istear Khan",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N18",
+      "name": "Pilah",
+      "parl": "Kuala Pilah",
+      "ethnic": "mixed_malay",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.087,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Noorzunita Begum",
+          "incumbent": true
+        },
+        {
+          "party": "BN",
+          "name": "S Leza Md Yasin",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 0.6674,
+        "PH": 0.3326
+      },
+      "leader": "BN",
+      "leader_prob": 0.6674,
+      "classification": "Lean"
+    },
+    {
+      "code": "N19",
+      "name": "Johol",
+      "parl": "Kuala Pilah",
+      "ethnic": "malay_rural",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.203,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Zailan Munawar",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Saiful Yazan Sulaiman",
+          "incumbent": true
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N20",
+      "name": "Labu",
+      "parl": "Rasah",
+      "ethnic": "malay_majority",
+      "y2023_winner": "PN",
+      "y2023_maj_pct": 0.076,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Ahmad Faez",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Siti Nur Umaira",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "Hanifah Abu Baker",
+          "incumbent": true
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N21",
+      "name": "Bukit Kepayang",
+      "parl": "Rasah",
+      "ethnic": "chinese_majority",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.783,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Nicole Tan",
+          "incumbent": true
+        },
+        {
+          "party": "PN",
+          "name": "Lee Boon Shian",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N22",
+      "name": "Rahang",
+      "parl": "Rasah",
+      "ethnic": "chinese_majority",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.601,
+      "contest": "4-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Siau Meow Kong",
+          "incumbent": true
+        },
+        {
+          "party": "BN",
+          "name": "Yap Siok Moy",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "Tang Jay Son",
+          "incumbent": false
+        },
+        {
+          "party": "PSM",
+          "name": "S Tinagaran",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N23",
+      "name": "Mambau",
+      "parl": "Rasah",
+      "ethnic": "chinese_majority",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.649,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Lee Kai Yet",
+          "incumbent": false
+        },
+        {
+          "party": "PN",
+          "name": "Erik Michael",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "N Sarawanan",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N24",
+      "name": "Seremban Jaya",
+      "parl": "Rasah",
+      "ethnic": "mixed_chinese",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.599,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "S Mugunthan",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "R T Thinalan",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "R Mahendran",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N25",
+      "name": "Paroi",
+      "parl": "Rembau",
+      "ethnic": "mixed_malay",
+      "y2023_winner": "PN",
+      "y2023_maj_pct": 0.144,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Ahmad Shahir",
+          "incumbent": false
+        },
+        {
+          "party": "PN",
+          "name": "Kamarol Ridzuan",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Nazree Yunos",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PN": 0.2841,
+        "PH": 0.7159
+      },
+      "leader": "PH",
+      "leader_prob": 0.7159,
+      "classification": "Lean"
+    },
+    {
+      "code": "N26",
+      "name": "Chembong",
+      "parl": "Rembau",
+      "ethnic": "malay_majority",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.222,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Danish Nazran",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Zairul Bahri Idris",
+          "incumbent": true
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N27",
+      "name": "Rantau",
+      "parl": "Rembau",
+      "ethnic": "mixed_malay",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.336,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Azizul Hakim",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Mohamad Hasan (Tok Mat)",
+          "incumbent": true,
+          "star": true
+        }
+      ],
+      "probs": {
+        "BN": 0.9607,
+        "PH": 0.0393
+      },
+      "leader": "BN",
+      "leader_prob": 0.9607,
+      "classification": "Safe"
+    },
+    {
+      "code": "N28",
+      "name": "Kota",
+      "parl": "Rembau",
+      "ethnic": "malay_rural",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.011,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Allif Ibrahim",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Suhaimi Aini",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Akmal Noradzmi",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N29",
+      "name": "Chuah",
+      "parl": "Port Dickson",
+      "ethnic": "chinese_majority",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.489,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Yew Boon Lye",
+          "incumbent": true
+        },
+        {
+          "party": "BN",
+          "name": "Pau Jeou Ching",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N30",
+      "name": "Lukut",
+      "parl": "Port Dickson",
+      "ethnic": "chinese_majority",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.531,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Choo Ken Hwa",
+          "incumbent": true
+        },
+        {
+          "party": "PN",
+          "name": "Sathes Kumar",
+          "incumbent": false
+        },
+        {
+          "party": "IND",
+          "name": "Teo Seng Lee",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 1.0
+      },
+      "leader": "PH",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N31",
+      "name": "Bagan Pinang",
+      "parl": "Port Dickson",
+      "ethnic": "malay_majority",
+      "y2023_winner": "PN",
+      "y2023_maj_pct": 0.18,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Nasir Rahman",
+          "incumbent": false
+        },
+        {
+          "party": "PN",
+          "name": "Abdul Fatah Zakaria",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Sheikh Junaidy",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PN": 1.0
+      },
+      "leader": "PN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N32",
+      "name": "Linggi",
+      "parl": "Port Dickson",
+      "ethnic": "malay_majority",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.101,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Aminuddin Harun (MB)",
+          "incumbent": false,
+          "star": true
+        },
+        {
+          "party": "BN",
+          "name": "Faizal Ramli",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Zamri Said",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N33",
+      "name": "Sri Tanjung",
+      "parl": "Port Dickson",
+      "ethnic": "indian_influence",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.281,
+      "contest": "5-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "G Rajasekaran",
+          "incumbent": true
+        },
+        {
+          "party": "BN",
+          "name": "A Achutan",
+          "incumbent": false
+        },
+        {
+          "party": "BERSATU",
+          "name": "M Leevineshwaraan",
+          "incumbent": false
+        },
+        {
+          "party": "IND",
+          "name": "Islah Wahyudi",
+          "incumbent": false
+        },
+        {
+          "party": "IND",
+          "name": "A Saravanan",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 0.9959,
+        "BN": 0.0041
+      },
+      "leader": "PH",
+      "leader_prob": 0.9959,
+      "classification": "Safe"
+    },
+    {
+      "code": "N34",
+      "name": "Gemas",
+      "parl": "Tampin",
+      "ethnic": "malay_rural",
+      "y2023_winner": "PN",
+      "y2023_maj_pct": 0.319,
+      "contest": "3-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Siti Aishah Seman",
+          "incumbent": false
+        },
+        {
+          "party": "PN",
+          "name": "Ridzuan Ahmad",
+          "incumbent": true
+        },
+        {
+          "party": "BERSATU",
+          "name": "Azman Abdullah",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PN": 1.0
+      },
+      "leader": "PN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N35",
+      "name": "Gemencheh",
+      "parl": "Tampin",
+      "ethnic": "malay_rural",
+      "y2023_winner": "BN",
+      "y2023_maj_pct": 0.114,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "Abd Latif Tambi",
+          "incumbent": false
+        },
+        {
+          "party": "BN",
+          "name": "Suhaimizan Bizar",
+          "incumbent": true
+        }
+      ],
+      "probs": {
+        "BN": 1.0
+      },
+      "leader": "BN",
+      "leader_prob": 1.0,
+      "classification": "Safe"
+    },
+    {
+      "code": "N36",
+      "name": "Repah",
+      "parl": "Tampin",
+      "ethnic": "indian_influence",
+      "y2023_winner": "PH",
+      "y2023_maj_pct": 0.278,
+      "contest": "2-way",
+      "candidates": [
+        {
+          "party": "PH",
+          "name": "S Veerapan",
+          "incumbent": true
+        },
+        {
+          "party": "BN",
+          "name": "Koh Kim Swee",
+          "incumbent": false
+        }
+      ],
+      "probs": {
+        "PH": 0.9935,
+        "BN": 0.0065
+      },
+      "leader": "PH",
+      "leader_prob": 0.9935,
+      "classification": "Safe"
+    }
+  ]
+}

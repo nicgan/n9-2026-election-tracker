@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "generated_at": "2026-07-19T10:50:00+08:00",
+    "polling_day": "2026-08-01",
+    "confidence_level": "Medium",
+    "confidence_notes": "Field structure now locked (nomination day 18 Jul). Johor precedent is fresh and directional but not identical (NS has different ethnic mix and long-standing PH governance). No public NS-specific polls yet; ground reports mixed. Bersatu solo run is a genuine unknown."
+  },
+  "executive": {
+    "predicted_winner": "BN + PN coalition",
+    "predicted_winner_short": "BN+PN",
+    "probability_pct": 78,
+    "headline": "A BN+PN government is now the base-case outcome — but the Chinese-majority seat firewall keeps PH in the low-to-mid teens.",
+    "subhead": "PH governs since 2018 and holds strong Chinese-majority seats around Seremban and Port Dickson. But the Malay-belt swing to BN following the 11 July Johor landslide, combined with Bersatu splintering the opposition Malay vote in only 24 seats, gives the BN-PN informal pact a clear structural advantage.",
+    "current_call": [
+      "**Most likely winner: BN + PN (via informal pact).** BN contests 25 seats, PN 11, no overlap. Combined baseline mean ~20 seats — just past the 19-seat majority threshold. Simulations put ≥19 in the 80-85% range.",
+      "**PH holds a floor of ~13-16 seats** anchored by DAP-held Chinese-majority urban Seremban and Port Dickson seats (Bahau, Lobak, Bukit Kepayang, Mambau, Rahang, Chuah, Lukut) plus PKR/Amanah incumbents in Malay-mixed urban wards.",
+      "**Bersatu is the wildcard.** Contesting 24 seats solo — no two-way with BN, 16 clashes with BN, 8 with PN. It caps its own seat ceiling but siphons enough Malay-nationalist vote to help PH in narrow Malay-mixed toss-ups (Klawang, Ampangan, Kota, Sikamat).",
+      "**The royal dispute has not become a decisive campaign wedge** as of nomination day, though it remains a low-probability, high-impact swing factor."
+    ],
+    "surprise_scenario": "**PH holds government via hung-assembly plurality.** If Bersatu bleeds enough Malay vote from BN in 6-8 rural three-way seats (Sungai Lui, Palong, Juasseh, Seri Menanti, Kota, Gemencheh), and Chinese turnout holds above 70%, PH could reach 17-18 seats — just short of majority — while BN+PN falls to 16-18. A hung assembly then triggers palace intervention over MB appointment. Probability: ~7-10%.",
+    "watchlist": [
+      "Merdeka Center or INVOKE releasing NS-specific polling — currently no public poll has been published.",
+      "Anwar Ibrahim campaign visits and their ceramah crowd response — a marker of PH ground morale.",
+      "Any escalation of the royal dispute (federal statement, court filing, Undang counter-move) that could reactivate it as a campaign issue.",
+      "Bersatu absorption rate of the PAS 2023 protest vote — if Bersatu polls above 15% in Malay-majority seats, BN loses its knife-edge wins.",
+      "Early-voting turnout on 28 July — police & military historically favour BN; a strong early lead moves the mean."
+    ]
+  },
+  "momentum": [
+    {"party": "BN", "rating": "Positive", "code": "p",
+     "drivers": "Ridedown from Johor victory (48/56). Zambry-led ceramah tour under way. Tok Mat treated as MB shadow-candidate."},
+    {"party": "PH", "rating": "Negative", "code": "neg",
+     "drivers": "Loke's post-Johor damage-control speech signals ground morale issue. Anwar's 'give PH stronger mandate' plea reads as defensive."},
+    {"party": "PN (PAS)", "rating": "Neutral", "code": "n",
+     "drivers": "Contesting only 11 seats under BN pact — narrow but insulated from Bersatu backlash. Fairuz Isa & Fatah Zakaria strong incumbents."},
+    {"party": "Bersatu", "rating": "Negative", "code": "neg",
+     "drivers": "Wiped out in Johor. Facing 3-way vs BN in 16 seats where it will bleed vote share without winning. Muhyiddin visibility low."},
+    {"party": "Independents / minor", "rating": "Neutral", "code": "n",
+     "drivers": "PSM (Rahang), Berjasa (Nilai), Asli (Jeram Padang) — combined <1% seat probability."}
+  ],
+  "sentiment": [
+    {"platform": "X (Twitter)", "PH": "Neutral", "BN": "Positive", "PN": "Negative", "BERSATU": "Negative",
+     "notes": "Post-Johor euphoria continues in BN accounts. #PRNNS trending; net +12% engagement on BN vs 7-day mean."},
+    {"platform": "Facebook", "PH": "Positive", "BN": "Positive", "PN": "Neutral", "BERSATU": "Negative",
+     "notes": "Malay-language pages skew BN. DAP pages retain strong Chinese engagement in Seremban wards."},
+    {"platform": "TikTok", "PH": "Negative", "BN": "Very Positive", "PN": "Positive", "BERSATU": "Neutral",
+     "notes": "Youth Malay creators overwhelmingly BN-favourable. PH TikTok reach declining vs Johor cycle."},
+    {"platform": "Threads", "PH": "Positive", "BN": "Neutral", "PN": "Negative", "BERSATU": "Negative",
+     "notes": "Skews urban-progressive; overweights DAP-aligned voices. Small volume."},
+    {"platform": "Reddit r/malaysia", "PH": "Neutral", "BN": "Neutral", "PN": "Negative", "BERSATU": "Neutral",
+     "notes": "Skeptical of both blocs. Cost-of-living dominates. Low predictive value for NS specifically."},
+    {"platform": "Telegram public", "PH": "Neutral", "BN": "Positive", "PN": "Positive", "BERSATU": "Neutral",
+     "notes": "Malay-language political channels lean opposition-friendly. High coordinated-share activity flagged around royal dispute."}
+  ],
+  "coordinated_flags": [
+    "Two Bersatu-aligned Telegram channels amplified identical royal-dispute content within 40-minute window on 15 Jul.",
+    "Suspicious burst of new pro-BN Facebook pages registered in Seremban, Port Dickson between 5-12 Jul — content, not clear authenticity signal yet."
+  ],
+  "demographics": [
+    {"segment": "Malay voters (55%)", "lean": "BN/PN", "lean_pct": 58, "drivers": "Johor spillover + Umno unity narrative; Bersatu drains 10-15% back from opposition Malay pool."},
+    {"segment": "Chinese voters (23%)", "lean": "PH", "lean_pct": 74, "drivers": "DAP incumbent loyalty. But turnout risk — Johor Chinese turnout was ~55%."},
+    {"segment": "Indian voters (16%)", "lean": "PH (soft)", "lean_pct": 52, "drivers": "Traditional MIC vs DAP-Indian dynamic, split with generational lean toward PH."},
+    {"segment": "Orang Asli (~1%)", "lean": "Mixed / BN edge", "lean_pct": 48, "drivers": "Handful of seats in Jelebu/Jempol; Asli party (Jeram Padang) draws first-nation-first vote."},
+    {"segment": "Youth 18–25", "lean": "PN → BN shift", "lean_pct": 51, "drivers": "TikTok signal shows youth Malay swing from PN 2022→BN 2026 after Johor."},
+    {"segment": "First-time voters", "lean": "BN (small edge)", "lean_pct": 49, "drivers": "Undi18 cohort more BN-friendly than 2022 pattern per Ilham Centre 2025 indicators."},
+    {"segment": "Urban", "lean": "PH", "lean_pct": 62, "drivers": "Seremban / Nilai / Port Dickson centres. Cost-of-living cuts both ways."},
+    {"segment": "Semi-urban", "lean": "BN (mild)", "lean_pct": 51, "drivers": "Highest volatility band. Bersatu likely to peel."},
+    {"segment": "Rural", "lean": "BN/PN", "lean_pct": 62, "drivers": "Umno grassroots machine, PAS-branch loyalty. Johor precedent strong."},
+    {"segment": "Women", "lean": "Even", "lean_pct": 50, "drivers": "No clear gender-cleavage signal in current data."},
+    {"segment": "Civil servants", "lean": "BN (mild)", "lean_pct": 55, "drivers": "GST/COLA sensitivity; Umno remains preferred incumbent-party network."},
+    {"segment": "SME owners", "lean": "PH", "lean_pct": 54, "drivers": "PH policy on subsidy targeting, DAP business-friendly image."},
+    {"segment": "Middle-income households", "lean": "PH (soft)", "lean_pct": 51, "drivers": "But EPF withdrawal debate + petrol subsidy rationalisation drag."}
+  ],
+  "narratives_up": [
+    {"title": "'Continue the Johor momentum' (BN)", "note": "Framing NS as the second domino. Reinforced by Zahid & Zambry.", "impact": "High"},
+    {"title": "Cost of living / subsidy rationalisation", "note": "Petrol RON95 targeting timeline, egg & rice prices. Dominant across all platforms.", "impact": "High"},
+    {"title": "'Aminuddin has served 18 years — time for change'", "note": "BN targeting his shift from Sikamat to Linggi as evidence he's uncertain of his own base.", "impact": "Medium"},
+    {"title": "Royal dispute as legitimacy question", "note": "Fading from the daily headline cycle but still active in Malay-language commentary.", "impact": "Medium"},
+    {"title": "Bersatu as spoiler", "note": "Growing DAP/PKR message that a Bersatu vote is a wasted vote helping BN.", "impact": "Medium"}
+  ],
+  "narratives_down": [
+    {"title": "Anwar's federal record", "note": "Less prominent than during Johor — PH pivoting to state-level competency framing.", "impact": "Low"},
+    {"title": "Anti-DAP racial framing", "note": "Neutralised by BN's need to hold Chinese-BN alliance credibility.", "impact": "Low"},
+    {"title": "PAS as leader of opposition", "note": "Reduced now that BN owns the anti-PH lead voice in NS.", "impact": "Low"}
+  ],
+  "candidates": [
+    {"name": "Datuk Seri Mohamad Hasan (Tok Mat)", "party": "BN", "seat": "N27 Rantau",
+     "note": "UMNO deputy president, Foreign Minister. Running for a 6th term. Effectively BN's MB-in-waiting though not officially named. Widely popular; incumbency + star + 33% 2023 majority make Rantau close-to-safe."},
+    {"name": "Anthony Loke", "party": "PH-DAP", "seat": "N01 Chennah",
+     "note": "DAP SG, Transport Minister. Defending Chennah since 2013. Straight fight vs MCA. Symbolic seat for DAP prestige — losing would trigger internal reckoning."},
+    {"name": "Datuk Seri Aminuddin Harun", "party": "PH-PKR", "seat": "N32 Linggi",
+     "note": "Caretaker MB. Left his stronghold Sikamat (won it since 2008) to contest BN-held Linggi (2023 winner Faizal Ramli, 1,461 majority). Bold, potentially reckless: a loss ends his political career."},
+    {"name": "Datuk Seri Jalaluddin Alias", "party": "BN-UMNO", "seat": "N02 Pertang",
+     "note": "Jelebu MP + Negeri Sembilan UMNO chief. Defending Pertang. Coordinates BN state machinery."},
+    {"name": "Datuk Tun Faisal Ismail", "party": "Bersatu", "seat": "N13 Sikamat",
+     "note": "Bersatu high-profile candidate in the seat vacated by Aminuddin. Test case for whether Bersatu can hold Malay-mixed urban seats without PAS."},
+    {"name": "Nicole Tan", "party": "PH-DAP", "seat": "N21 Bukit Kepayang",
+     "note": "Incumbent since 2018. Straight fight vs PN newcomer. Chinese-super-safe (78% majority in 2023). Bellwether for DAP's Chinese firewall."},
+    {"name": "Datuk Bakri Sawir", "party": "PH-Amanah", "seat": "N04 Klawang",
+     "note": "Incumbent Amanah in a Malay-rural three-way vs PN + Bersatu. 2023 margin 6.3% — a canary for the Bersatu-spoiler effect on PH."}
+  ],
+  "risks": [
+    {"title": "Royal dispute reignition", "level": "med", "impact_seats": "±2-4",
+     "note": "If the Undang faction escalates via court filing or public statement before 1 Aug, PH loses moral-authority framing and BN gains 1-2 rural Malay seats."},
+    {"title": "Federal cabinet reshuffle / scandal", "level": "med", "impact_seats": "±1-3",
+     "note": "Anwar under pressure post-Johor. A defection or minister resignation would depress PH turnout."},
+    {"title": "Turnout below 65%", "level": "high", "impact_seats": "±3-5",
+     "note": "Johor turnout was 66%. Chinese-voter turnout is the single biggest driver of PH downside — every 5% drop costs PH ~2 Chinese-majority seats."},
+    {"title": "Major viral misinformation event", "level": "med", "impact_seats": "±1-3",
+     "note": "Deepfake or AI-generated race/religion content in final 72h. Historically favours whoever is trailing (currently PH)."},
+    {"title": "Bersatu-PAS reconciliation (last-minute PN unity)", "level": "low", "impact_seats": "±2-4",
+     "note": "If Muhyiddin/Hadi announce a joint appeal by 28 Jul, Bersatu could stand-down some candidates. Currently no signal."},
+    {"title": "Kuala Kubu Baharu-style anti-DAP racial campaign", "level": "med", "impact_seats": "±1-2",
+     "note": "Watch Malay-language TikTok for coordinated content targeting Loke, Nicole Tan, Chew Seh Yong."},
+    {"title": "Economic shock (RM/USD, oil price)", "level": "low", "impact_seats": "±0-2",
+     "note": "Ringgit under 4.70/USD watch. Fuel-subsidy timing could re-enter the cycle."}
+  ],
+  "polls": [
+    {"source": "Merdeka Center", "date": "2026-06-28", "method": "National mood tracker (extrapolated)",
+     "reliability": "A", "signal": "Malaysian voters lean BN+43 vs PH+31 nationally; NS-specific poll not yet released."},
+    {"source": "INVOKE", "date": "—", "method": "—",
+     "reliability": "A", "signal": "No NS state poll published as of nomination day."},
+    {"source": "Ilham Centre", "date": "2026-07-08", "method": "Focus groups + ground survey (Johor)",
+     "reliability": "B+", "signal": "Johor findings pointed to BN sweep — proved accurate. Suggests methodology transferable to NS Malay-belt."},
+    {"source": "The Vibes ground report", "date": "2026-07-16", "method": "Journalist ceramah observation",
+     "reliability": "C", "signal": "BN turnout at Rembau/Kuala Pilah events noticeably larger than PH. Qualitative only."},
+    {"source": "pilihanraya.my simulator", "date": "2026-07-18", "method": "10,000-sim electoral model",
+     "reliability": "B", "signal": "BN-PN majority in 9,993 / 10,000 simulations; median ~24 seats. Consistent with our model's directional call, slightly more BN-favourable."},
+    {"source": "Sinar Harian analyst projection", "date": "2026-07-18", "method": "Expert judgement",
+     "reliability": "B", "signal": "BN-PN 23-26 · PH 10-13 · Bersatu 0-1. Skews more anti-PH than our model."}
+  ],
+  "markets": [
+    {"source": "Polymarket / Kalshi", "type": "Prediction market", "ph_gov": null, "bnpn_gov": null,
+     "note": "No listed contract for NS state election as of 19 Jul 2026."},
+    {"source": "The Edge Malaysia expert panel", "type": "Analyst consensus", "ph_gov": 15, "bnpn_gov": 82,
+     "note": "Post-Johor panel: BN likely to form govt. 3% hung-assembly tail."},
+    {"source": "pilihanraya.my model", "type": "Quant model", "ph_gov": 5, "bnpn_gov": 95,
+     "note": "10k-sim electoral model. More BN-confident than our estimate."},
+    {"source": "This dashboard", "type": "This model", "ph_gov": 5, "bnpn_gov": 95,
+     "note": "See section 1. Confidence: Medium."}
+  ],
+  "changelog": [
+    {"timestamp": "2026-07-19 10:50", "summary": "Baseline forecast v1.0 initialised. BN+PN probability 95%. Field structure locked at nomination day (103 candidates, PH 36, BN 25, PN 11, Bersatu 24, others 7). 12 days to polling."},
+    {"timestamp": "2026-07-18 10:00", "summary": "Nomination day concludes. 21 three-way fights confirmed. BN and PN pact holds — no seat overlap. Bersatu confirmed as opposition splitter in 24 seats."},
+    {"timestamp": "2026-07-16 20:00", "summary": "BN announces 25 candidates, leaves 11 seats for PN. Mohamad Hasan defends Rantau."},
+    {"timestamp": "2026-07-14 12:00", "summary": "PH announces 36 candidates. Aminuddin moves from Sikamat to Linggi. Loke defends Chennah."},
+    {"timestamp": "2026-07-11 23:00", "summary": "Johor state election result: BN 48, PH 8, PN 0. Landslide re-anchors NS model priors toward BN swing."},
+    {"timestamp": "2026-06-12 12:00", "summary": "EC fixes NS polling day 1 Aug; nomination 18 Jul; early vote 28 Jul."},
+    {"timestamp": "2026-06-05 00:00", "summary": "NS state assembly dissolved. Royal dispute escalates in parallel."}
+  ]
+}

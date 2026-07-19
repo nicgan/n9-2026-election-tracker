@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRN16 · Negeri Sembilan 2026 Election Intelligence</title>
+  <meta name="description" content="Living forecast dashboard for the 2026 Negeri Sembilan state election. Continuously updated probabilities, seat projections, sentiment, momentum and risk events until polling day, 1 August 2026." />
+  <meta property="og:title" content="PRN16 · Negeri Sembilan 2026 Election Intelligence" />
+  <meta property="og:description" content="Continuously updated forecast for the Aug 1, 2026 Negeri Sembilan state election." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext x='2' y='19' font-family='serif' font-size='20' fill='%23d4a574' font-weight='500'%3EN%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- =============== MASTHEAD =============== -->
+    <header class="masthead">
+      <div class="masthead-top">
+        <div class="meta-cluster">
+          <span class="live-badge">LIVE FORECAST</span>
+          <span>PRN 16 · Negeri Sembilan</span>
+          <span>Polling: Sat 1 Aug 2026</span>
+          <span id="days-to-polling">— days to go</span>
+        </div>
+        <div class="meta-cluster">
+          <span>Last update: <span id="last-updated" class="mono">—</span></span>
+          <span>Next auto-refresh: <span id="next-update" class="mono">—</span></span>
+        </div>
+      </div>
+      <div class="masthead-title">
+        <div>
+          <h1>
+            The Seremban Ledger
+            <span class="subtitle">A living intelligence brief on the 16th Negeri Sembilan state election</span>
+          </h1>
+        </div>
+        <div class="masthead-actions">
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle theme">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =============== IN-PAGE NAV =============== -->
+    <nav class="anchor-nav" aria-label="Section links">
+      <ul>
+        <li><a href="#outlook">Overall</a></li>
+        <li><a href="#seats">Seats</a></li>
+        <li><a href="#heatmap">Heat map</a></li>
+        <li><a href="#momentum">Momentum</a></li>
+        <li><a href="#sentiment">Sentiment</a></li>
+        <li><a href="#demographics">Demographics</a></li>
+        <li><a href="#constituencies">Constituencies</a></li>
+        <li><a href="#narrative">Narrative</a></li>
+        <li><a href="#candidates">Candidates</a></li>
+        <li><a href="#risks">Risks</a></li>
+        <li><a href="#polls">Polls</a></li>
+        <li><a href="#markets">Markets</a></li>
+        <li><a href="#changelog">Change log</a></li>
+        <li><a href="#executive">Executive</a></li>
+      </ul>
+    </nav>
+
+    <!-- =============== EXECUTIVE HEADLINE =============== -->
+    <div class="exec-summary" id="exec-summary">
+      <div>
+        <div class="exec-headline" id="exec-headline">Loading forecast…</div>
+        <div class="muted small" id="exec-subhead"></div>
+      </div>
+      <div class="metric-grid">
+        <div class="metric">
+          <div class="label">Confidence</div>
+          <div class="value small" id="confidence-value">—</div>
+        </div>
+        <div class="metric">
+          <div class="label">Projected seats</div>
+          <div class="value small" id="projected-seats">—</div>
+        </div>
+        <div class="metric">
+          <div class="label">Threshold (majority)</div>
+          <div class="value small">19 / 36</div>
+        </div>
+        <div class="metric">
+          <div class="label">Registered voters</div>
+          <div class="value small">~900k</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============== 1. OVERALL ELECTION OUTLOOK =============== -->
+    <section class="block" id="outlook">
+      <header>
+        <h2>1 · Overall election outlook</h2>
+        <span class="section-tag">Government-formation probability</span>
+      </header>
+      <p class="section-note">Probability that each coalition forms the next Negeri Sembilan state government (≥19 of 36 DUN seats, or largest plurality in a hung assembly). Based on <span class="mono" id="n-sims">10,000</span> Monte Carlo simulations calibrated to 2023 baseline, Johor spillover, and current field composition.</p>
+      <div class="gov-prob" id="gov-prob"></div>
+    </section>
+
+    <!-- =============== 2. PREDICTED SEATS =============== -->
+    <section class="block" id="seats">
+      <header>
+        <h2>2 · Predicted seat totals</h2>
+        <span class="section-tag">Mean, 80% credible range, majority odds</span>
+      </header>
+      <table class="data" id="seat-table">
+        <thead><tr>
+          <th>Coalition / Party</th>
+          <th class="num">Mean</th>
+          <th class="num">80% range</th>
+          <th class="num">P(≥19)</th>
+          <th>Distribution</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- =============== 3. SEAT HEAT MAP =============== -->
+    <section class="block" id="heatmap">
+      <header>
+        <h2>3 · Seat heat map — 36 constituencies</h2>
+        <span class="section-tag">Classified by winner probability</span>
+      </header>
+      <p class="section-note">Classification thresholds — Safe: ≥90%. Likely: 75–90%. Lean: 60–75%. Toss-up: 50–60%. Too close to call: below 50%. Colour bar shows leading coalition. Click a seat to jump to full constituency intelligence below.</p>
+      <div class="heat-grid" id="heat-grid"></div>
+    </section>
+
+    <!-- =============== 4. MOMENTUM =============== -->
+    <section class="block" id="momentum">
+      <header>
+        <h2>4 · Momentum tracker</h2>
+        <span class="section-tag">Daily campaign trajectory</span>
+      </header>
+      <p class="section-note">Aggregated across candidate quality, rallies, endorsements, grassroots activity, fundraising visibility, and online engagement over the last 24h.</p>
+      <div class="momentum-grid" id="momentum-grid"></div>
+    </section>
+
+    <!-- =============== 5. SENTIMENT =============== -->
+    <section class="block" id="sentiment">
+      <header>
+        <h2>5 · Online sentiment · by platform</h2>
+        <span class="section-tag">Signal, not a vote-intent proxy</span>
+      </header>
+      <div class="callout" id="sentiment-callout">
+        <strong>Weighting warning:</strong> Social sentiment is treated as one input among many. It over-samples urban, English-literate, and younger voters — <em>not</em> the median Negeri Sembilan voter. Coordinated campaigns and bot activity are flagged where detectable.
+      </div>
+      <div class="sentiment-grid" id="sentiment-grid"></div>
+    </section>
+
+    <!-- =============== 6. DEMOGRAPHICS =============== -->
+    <section class="block" id="demographics">
+      <header>
+        <h2>6 · Demographic support</h2>
+        <span class="section-tag">Estimated coalition lean by segment</span>
+      </header>
+      <div id="demo-list"></div>
+    </section>
+
+    <!-- =============== 7. CONSTITUENCY INTELLIGENCE =============== -->
+    <section class="block" id="constituencies">
+      <header>
+        <h2>7 · Constituency intelligence · all 36 seats</h2>
+        <span class="section-tag">Winner probability, risk, key candidates</span>
+      </header>
+      <div style="overflow-x: auto;">
+        <table class="data" id="constituency-table">
+          <thead><tr>
+            <th>Seat</th>
+            <th>2023 winner</th>
+            <th>2026 leader</th>
+            <th class="num">Leader %</th>
+            <th>Class</th>
+            <th>Contest</th>
+            <th>Key candidate</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- =============== 8. NARRATIVE =============== -->
+    <section class="block" id="narrative">
+      <header>
+        <h2>8 · Narrative tracker</h2>
+        <span class="section-tag">Dominant campaign frames</span>
+      </header>
+      <div class="two-col">
+        <div>
+          <h3 style="margin-bottom:var(--space-3);">Growing</h3>
+          <div class="narrative-list" id="narrative-up"></div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:var(--space-3);">Fading</h3>
+          <div class="narrative-list" id="narrative-down"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== 9. CANDIDATE WATCH =============== -->
+    <section class="block" id="candidates">
+      <header>
+        <h2>9 · Candidate watch</h2>
+        <span class="section-tag">High-profile & pivotal figures</span>
+      </header>
+      <div class="candidate-list" id="candidate-list"></div>
+    </section>
+
+    <!-- =============== 10. RISK EVENTS =============== -->
+    <section class="block" id="risks">
+      <header>
+        <h2>10 · Political risk events</h2>
+        <span class="section-tag">Watchlist · estimated seat impact</span>
+      </header>
+      <div class="risk-list" id="risk-list"></div>
+    </section>
+
+    <!-- =============== 11. POLL AGGREGATOR =============== -->
+    <section class="block" id="polls">
+      <header>
+        <h2>11 · Poll aggregator</h2>
+        <span class="section-tag">Weighted by pollster reliability</span>
+      </header>
+      <table class="data" id="poll-table">
+        <thead><tr>
+          <th>Source</th>
+          <th>Date</th>
+          <th>Method</th>
+          <th class="num">Reliability</th>
+          <th>Signal</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- =============== 12. PREDICTION MARKETS =============== -->
+    <section class="block" id="markets">
+      <header>
+        <h2>12 · Prediction markets & external forecasts</h2>
+        <span class="section-tag">Model comparison</span>
+      </header>
+      <table class="data" id="market-table">
+        <thead><tr>
+          <th>Source</th>
+          <th>Type</th>
+          <th class="num">PH gov</th>
+          <th class="num">BN+PN gov</th>
+          <th>Notes</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- =============== 13. CHANGE LOG =============== -->
+    <section class="block" id="changelog">
+      <header>
+        <h2>13 · Real-time probability changelog</h2>
+        <span class="section-tag">Chronological · newest first</span>
+      </header>
+      <div class="changelog" id="changelog-list"></div>
+    </section>
+
+    <!-- =============== 14. EXECUTIVE SUMMARY =============== -->
+    <section class="block" id="executive">
+      <header>
+        <h2>14 · Executive summary</h2>
+        <span class="section-tag">Predicted outcome · risks · surprise scenario</span>
+      </header>
+      <div class="two-col">
+        <div>
+          <h3 style="margin-bottom:var(--space-3);">Current call</h3>
+          <div id="exec-current"></div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:var(--space-3);">Biggest surprise scenario</h3>
+          <div id="exec-surprise" class="callout"></div>
+        </div>
+      </div>
+      <h3 style="margin: var(--space-6) 0 var(--space-3);">Five indicators to watch (next 24–72h)</h3>
+      <ol id="exec-watchlist" style="padding-left: var(--space-6); display: flex; flex-direction: column; gap: var(--space-2);"></ol>
+    </section>
+
+    <footer class="masthead-foot">
+      <div>Est. 2026 · Generated forecasts, not predictions. Refreshed twice daily plus on major events.</div>
+      <div class="disclaimer">
+        This dashboard synthesises publicly reported information. Probabilities are model outputs conditional on stated assumptions and will be wrong if those assumptions are wrong. Not campaign-affiliated. Not investment advice.
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
