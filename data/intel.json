@@ -1,151 +1,779 @@
 {
   "meta": {
-    "generated_at": "2026-07-19T10:50:00+08:00",
+    "generated_at": "2026-08-02T07:38:54+08:00",
     "polling_day": "2026-08-01",
     "confidence_level": "Medium",
-    "confidence_notes": "Field structure now locked (nomination day 18 Jul). Johor precedent is fresh and directional but not identical (NS has different ethnic mix and long-standing PH governance). No public NS-specific polls yet; ground reports mixed. Bersatu solo run is a genuine unknown."
+    "confidence_notes": "POST-ELECTION ACCURACY REVIEW (2 Aug 07:36 MYT). Official EC results: BN 18, PN 7, PH 11. BN+PN combined 25 = two-thirds majority. Turnout final 72.64% (646,084 voters). Model direction (BN+PN forms government) — CORRECT. Per-seat accuracy: 30/36 (83.3%). Model BN+PN seat mean 18.46 vs actual 25 → -6.54 underestimate. PH mean 17.54 vs actual 11 → +6.54 overestimate. Two biggest hits: BN+PN win call held through 3 weeks despite mainstream Ilham/Ong projections putting it lower, and correctly flagged the non-Malay-turnout risk on polling-day evening brief. Biggest misses: 6 PH-called seats flipped (Chennah N01, Sikamat N13, Ampangan N14, Pilah N18, Paroi N25, Repah N36) — all direction misses, no within-coalition misses. Chennah loss to Anthony Loke was the marquee upset. Aminuddin Harun lost Linggi (model called correctly). Amanah wipeout confirmed. DAP still PH's core (8 of 11 seats). Bersatu shut out from 24 own-logo contests. Both crons will be deleted after this review."
   },
   "executive": {
-    "predicted_winner": "BN + PN coalition",
+    "probability_pct": 100,
+    "predicted_winner": "BN+PN Unity/Perikatan pact",
     "predicted_winner_short": "BN+PN",
-    "probability_pct": 95,
-    "headline": "A BN+PN government is now the base-case outcome — the Chinese-majority seat firewall keeps PH in the low-to-mid teens.",
-    "subhead": "PH governs since 2018 and holds strong Chinese-majority seats around Seremban and Port Dickson. But the Malay-belt swing to BN following the 11 July Johor landslide, combined with Bersatu splintering the opposition Malay vote in only 24 seats, gives the BN-PN informal pact a clear structural advantage.",
-    "current_call": [
-      "**Most likely winner: BN + PN (via informal pact).** BN contests 25 seats, PN 11, no overlap. Combined baseline mean ~20 seats — just past the 19-seat majority threshold. Simulations put ≥19 in the 80-85% range.",
-      "**PH holds a floor of ~13-16 seats** anchored by DAP-held Chinese-majority urban Seremban and Port Dickson seats (Bahau, Lobak, Bukit Kepayang, Mambau, Rahang, Chuah, Lukut) plus PKR/Amanah incumbents in Malay-mixed urban wards.",
-      "**Bersatu is the wildcard.** Contesting 24 seats solo — no two-way with BN, 16 clashes with BN, 8 with PN. It caps its own seat ceiling but siphons enough Malay-nationalist vote to help PH in narrow Malay-mixed toss-ups (Klawang, Ampangan, Kota, Sikamat).",
-      "**The royal dispute has not become a decisive campaign wedge** as of nomination day, though it remains a low-probability, high-impact swing factor."
-    ],
-    "surprise_scenario": "**PH holds government via hung-assembly plurality.** If Bersatu bleeds enough Malay vote from BN in 6-8 rural three-way seats (Sungai Lui, Palong, Juasseh, Seri Menanti, Kota, Gemencheh), and Chinese turnout holds above 70%, PH could reach 17-18 seats — just short of majority — while BN+PN falls to 16-18. A hung assembly then triggers palace intervention over MB appointment. Probability: ~7-10%.",
+    "headline": "**POST-ELECTION ACCURACY REVIEW.** Model called BN+PN government (73%) — CORRECT. Per-seat: 30/36 (83.3%). BN 18 + PN 7 = 25 (two-thirds). PH 11.",
+    "subhead": "Final turnout 72.64%. Direction correct throughout. Model underestimated BN+PN by 6.5 seats. Six PH-called seats flipped to BN/PN. Loke lost Chennah. Aminuddin lost Linggi (model correct).",
+    "current_call": "**MODEL VERDICT: DIRECTIONALLY CORRECT, MAGNITUDE UNDERESTIMATED.** Government-formation probability call (BN+PN 73%) validated — BN-PN alliance formally won two-thirds majority. Per-seat accuracy 83.3% (30/36 correct). Zero within-coalition confusion — all 6 misses were direction (PH-called seats that flipped BN or PN). Model expected PH ~17.5 seats; actual 11. Model expected BN+PN ~18.5; actual 25. **The gap is UMNO+PAS vote consolidation being 6 pp stronger than priors captured** — this is the coordinated-race/religion effect our narratives_up flagged repeatedly but which the model treated as marginal. Both dashboard crons (860e4b8d morning + ea331b41 evening) will be deleted after this notification.",
+    "surprise_scenario": "N/A — election is over. **Biggest surprise vs consensus:** Anthony Loke losing Chennah (688-vote majority to BN's Siow Kong Choon). Loke had held for three terms. **Biggest surprise vs model:** Sikamat/Ampangan/Paroi all flipping PH → PN in urban-mixed seats. Ilham's TCTC flags on Nilai/Repah/Temiang were 2-for-3 (Repah went BN as Ilham warned; Nilai and Temiang held PH). **Biggest confirmation:** Aminuddin MB losing Linggi despite MB weight and 2018 majority — model called this correctly at ~55/45 BN.",
     "watchlist": [
-      "Merdeka Center or INVOKE releasing NS-specific polling — currently no public poll has been published.",
-      "Anwar Ibrahim campaign visits and their ceramah crowd response — a marker of PH ground morale.",
-      "Any escalation of the royal dispute (federal statement, court filing, Undang counter-move) that could reactivate it as a campaign issue.",
-      "Bersatu absorption rate of the PAS 2023 protest vote — if Bersatu polls above 15% in Malay-majority seats, BN loses its knife-edge wins.",
-      "Early-voting turnout on 28 July — police & military historically favour BN; a strong early lead moves the mean."
+      "**BN-PN Menteri Besar formation talks** — Zahid confirmed BN + PN alliance will form new government. Watch for MB nomination.",
+      "**Amanah wipeout** — 0/7 seats. Party will need internal review.",
+      "**Bersatu 0/24 own-logo shutout** — party's post-election strategic direction now uncertain.",
+      "**PH's identity-politics framing** — Amirudin blamed loss on 'racial politics'. Watch how DAP/PKR respond in unity government.",
+      "**Two-thirds majority implications** — BN-PN can amend state constitution unilaterally. Watch royal-dispute follow-up.",
+      "**GE16 read-across** — result is strongest signal yet that UMNO+PAS informal cooperation could dominate rural Peninsular Malaysia. Anwar unity government now under pressure.",
+      "**This dashboard is retired.** Both automated crons will be deleted after this notification."
     ]
   },
   "momentum": [
-    {"party": "BN", "rating": "Positive", "code": "p",
-     "drivers": "Ridedown from Johor victory (48/56). Zambry-led ceramah tour under way. Tok Mat treated as MB shadow-candidate."},
-    {"party": "PH", "rating": "Negative", "code": "neg",
-     "drivers": "Loke's post-Johor damage-control speech signals ground morale issue. Anwar's 'give PH stronger mandate' plea reads as defensive."},
-    {"party": "PN (PAS)", "rating": "Neutral", "code": "n",
-     "drivers": "Contesting only 11 seats under BN pact — narrow but insulated from Bersatu backlash. Fairuz Isa & Fatah Zakaria strong incumbents."},
-    {"party": "Bersatu", "rating": "Negative", "code": "neg",
-     "drivers": "Wiped out in Johor. Facing 3-way vs BN in 16 seats where it will bleed vote share without winning. Muhyiddin visibility low."},
-    {"party": "Independents / minor", "rating": "Neutral", "code": "n",
-     "drivers": "PSM (Rahang), Berjasa (Nilai), Asli (Jeram Padang) — combined <1% seat probability."}
+    {
+      "party": "BN",
+      "rating": "Winner",
+      "code": "up",
+      "drivers": "**Won 18 seats** (+4 vs 2023). Sweep of Malay-majority rural + capture of Chennah (Loke) and Linggi (Aminuddin MB). Zahid confirmed BN-PN will form government."
+    },
+    {
+      "party": "PN",
+      "rating": "Winner",
+      "code": "up",
+      "drivers": "**Won 7 seats** (+2 vs 2023). All 7 PAS-side. Flipped Sikamat, Ampangan, Paroi from PH — model missed all three. Bagan Pinang held by Ustaz Fatah."
+    },
+    {
+      "party": "PH",
+      "rating": "Loser",
+      "code": "down",
+      "drivers": "**Won 11 seats** (-6 vs 2023). Lost Chennah, Linggi, and 4 other seats to BN-PN. Amirudin blamed 'racial politics'. DAP 8/11, PKR 3/11, Amanah 0/7."
+    },
+    {
+      "party": "Bersatu",
+      "rating": "Loser",
+      "code": "down",
+      "drivers": "**Won 0 seats** in 24 own-logo contests. Party's strategic direction now under review. Post-election position within PN uncertain."
+    }
   ],
   "sentiment": [
-    {"platform": "X (Twitter)", "PH": "Neutral", "BN": "Positive", "PN": "Negative", "BERSATU": "Negative",
-     "notes": "Post-Johor euphoria continues in BN accounts. #PRNNS trending; net +12% engagement on BN vs 7-day mean."},
-    {"platform": "Facebook", "PH": "Positive", "BN": "Positive", "PN": "Neutral", "BERSATU": "Negative",
-     "notes": "Malay-language pages skew BN. DAP pages retain strong Chinese engagement in Seremban wards."},
-    {"platform": "TikTok", "PH": "Negative", "BN": "Very Positive", "PN": "Positive", "BERSATU": "Neutral",
-     "notes": "Youth Malay creators overwhelmingly BN-favourable. PH TikTok reach declining vs Johor cycle."},
-    {"platform": "Threads", "PH": "Positive", "BN": "Neutral", "PN": "Negative", "BERSATU": "Negative",
-     "notes": "Skews urban-progressive; overweights DAP-aligned voices. Small volume."},
-    {"platform": "Reddit r/malaysia", "PH": "Neutral", "BN": "Neutral", "PN": "Negative", "BERSATU": "Neutral",
-     "notes": "Skeptical of both blocs. Cost-of-living dominates. Low predictive value for NS specifically."},
-    {"platform": "Telegram public", "PH": "Neutral", "BN": "Positive", "PN": "Positive", "BERSATU": "Neutral",
-     "notes": "Malay-language political channels lean opposition-friendly. High coordinated-share activity flagged around royal dispute."}
+    {
+      "platform": "X (Twitter)",
+      "tag": "[direct]",
+      "PH": "Negative-Strong",
+      "BN": "Positive-Strong",
+      "PN": "Positive",
+      "BERSATU": "Negative",
+      "notes": "Chennah Loke loss dominant hashtag overnight. #PRNNegeri9 trending. Anwar unity-government future questioned."
+    },
+    {
+      "platform": "Facebook",
+      "tag": "[direct]",
+      "PH": "Neutral",
+      "BN": "Positive-Strong",
+      "PN": "Positive",
+      "BERSATU": "Neutral",
+      "notes": "Bernama + RTM official announcements + Zahid victory speech dominant. DAP concede posts."
+    },
+    {
+      "platform": "TikTok",
+      "tag": "[direct]",
+      "PH": "Negative",
+      "BN": "Positive",
+      "PN": "Positive",
+      "BERSATU": "Neutral",
+      "notes": "BN victory scenes at Wisma UMNO Seremban. Vote-count clips from Chennah and Linggi trending."
+    },
+    {
+      "platform": "Threads",
+      "tag": "[proxied]",
+      "PH": "Negative",
+      "BN": "Positive",
+      "PN": "Positive",
+      "BERSATU": "Negative",
+      "notes": "'Identity politics wins' framing debated. GE16 implications heavily discussed."
+    }
+  ],
+  "strategic_playbook": [
+    {
+      "party": "BN",
+      "posture": "Front-runner. Play safe, close the door.",
+      "base_case": "Model: BN alone ~19-22 seats. Newswav analyst: BN+PN 50%. Structural favourite in Malay-majority + rural seats; Johor blueprint is the template.",
+      "to_win": [
+        "Lock the Malay heartland — keep semi-urban Malay (51% lean) from drifting via daily ceramah in Rembau, Kuala Pilah, Jempol, Tampin. Tok Mat, Zambry, Onn Hafiz on rotation.",
+        "Ship the manifesto before Thursday. Every day BN runs without a manifesto lets PH's '30k jobs / 20k homes / RM200 SSPN' set the substance frame. Match with concrete state-level numbers, not slogans.",
+        "Neutralise the royal-dispute drag. Onn Hafiz's Sunday rebuttal was on-message — keep him and Tok Mat in Jelebu/Jempol/Tampin all week. Do NOT let the Undang framing metastasise.",
+        "Discipline the PN pact publicly. Zahid's MB-claim is fine; Marzuki's 'Umno toppled PN' jibe is not. Every intra-pact quarrel gives PH the wasted-vote argument in mixed seats.",
+        "Keep MCA visible on the joint ticket. MCA-vacates-three-seats plus Wee's Loke attack was the right move — repeat it in Bahau and Rasah to hold the 23% Chinese vote at ~15% instead of ~5%."
+      ],
+      "failure_mode": [
+        "If BN's manifesto is late, thin, or federal-flavoured, PH consolidates the 'we're the only ones with a plan for NS' frame and pulls semi-urban Malay back.",
+        "If Umno keeps needling Bersatu publicly, opposition-Malay voters who would have split to Bersatu instead consolidate to PN — a net loss in Malay-mixed seats like Klawang, Sikamat, Kota.",
+        "If the royal-dispute framing escalates and Tok Mat does not visibly defuse it, Jelebu/Jempol margins compress and 2-3 seats slip.",
+        "Complacency risk: Johor turnout was 74%; a repeat 55% Chinese turnout only holds if BN keeps DAP-only-cares-about-DAP framing alive. If Chinese turnout climbs to 65% because of Loke's 'traitors and rebels' provocation, DAP holds its firewall and pact ceiling drops."
+      ]
+    },
+    {
+      "party": "PH",
+      "posture": "Trailing challenger. Substance-and-turnout play, not conversion.",
+      "base_case": "Model: PH ~10-13 seats. Newswav analyst: PH 35%. Structural underdog on Malay math; must defend the 2023 firewall and steal 2-3 semi-urban seats.",
+      "to_win": [
+        "Own the substance week. Manifesto launch is Day 4 — the '30k jobs / 20k homes / MVV 2.0 / NS Semiconductor Valley / RM200 SSPN' package is real. Repeat it every day, in every ceramah, in Malay-language first. Do not let it become an 'urban Chinese wishlist'.",
+        "Fix the Anwar-absence problem now. Either bring him to NS for one high-visibility rally by Day 7, or reframe Aminuddin as 'the local MB who governs NS' and lean into Aminuddin's on-foot ground game (Linggi Sunday walkabout is the model).",
+        "Contain the Chean Chung 'reformasi is dead' story internally. Public silence gives the framing oxygen. A DAP-internal reply — not a Loke reply — that acknowledges the frustration but recommits to the platform, within 48 hours.",
+        "Drive Chinese turnout above 65%. Johor's 55% Chinese turnout was the pact's structural gift. Nicole Tan (Bukit Kepayang) + Loke (Chennah) + Rasah + Lobak need coordinated turnout ops targeted at soft DAP voters, not new converts. Cost-of-living framing to hold the SME segment (54% lean).",
+        "Convert middle-income households (51% lean, softest segment). Target subsidy-targeting messaging at Seremban/Nilai/Port Dickson. This is where the 2-3 gain seats live.",
+        "Isolate Bersatu as spoiler in Klawang, Sikamat, Kota. Every Bersatu vote in a 3-way is a de-facto BN vote — Bakri Sawir's 6.3% 2023 margin is the canary. Make this argument every day."
+      ],
+      "failure_mode": [
+        "If PH lets Anwar's non-attendance dominate two more news cycles, the 'PM abandoned NS' frame locks in and semi-urban Malay soft-PH voters (currently 42%) collapse to ~35%.",
+        "If Chinese turnout comes in at 55% or below (Johor-parity), DAP's firewall cracks in Rasah/Lobak/Mambau and the seat floor drops from ~13 to ~9.",
+        "If the Chean Chung story metastasises into a broader 'DAP youth wing revolt' narrative, urban Chinese enthusiasm drops another 5-8 points on turnout.",
+        "If PH answers the '2018 empty promises' BN attack defensively instead of with third-party validation (industry endorsements, economist quotes on MVV 2.0), the manifesto shine fades by Day 8.",
+        "If PH cannot make the Bersatu-as-spoiler case stick in 3-way Malay-mixed seats, PN plus Bersatu combined take Klawang and one of Sikamat/Kota — floor drops to ~8."
+      ]
+    },
+    {
+      "party": "PN",
+      "posture": "Junior pact partner. Consolidate PAS core, don't get squeezed out.",
+      "base_case": "Model: ~2-4 seats via pact allocation. Rural PAS-branch seats and one or two Malay-heartland spillovers.",
+      "to_win": [
+        "Turn out the PAS-branch machine in Jelebu/Jempol/Tampin. Not conversion — turnout. The PAS core is small in NS but disciplined; every 1,000 marginal PAS votes in a rural 3-way is decisive.",
+        "Take Zahid's MB claim quietly. Public objection kills the pact's Malay-unity story that carries PN's 4-seat ceiling. Bank the pact seats, litigate leadership after the vote.",
+        "Ride the Instagram/TikTok youth-Malay signal. Youth 18-25 shifted PN 2022 → BN 2026 on TikTok, but Instagram data shows Malay-heartland comments still split — PN's 'Gelombang Biru' reels are landing. Push more of this, less of the federal-grievance content.",
+        "Keep Bersatu at arm's length. Public distance from Bersatu preserves the pact frame; Muhyiddin's isolation is a feature, not a bug."
+      ],
+      "failure_mode": [
+        "If PN publicly disputes Zahid's MB claim, the pact fractures visibly and PH regains the wasted-vote counter in Malay-mixed seats. Pact ceiling drops from 22-25 to 18-20.",
+        "If PN campaigns on federal grievances (petrol, RON95 targeting, Anwar-personal) instead of state issues, BN quietly runs the show and PN takes 1 seat instead of 3.",
+        "If PN allows Bersatu to poach Malay-opposition votes unchallenged in Sikamat/Kota, the pact loses 1-2 seats that were structurally winnable."
+      ]
+    },
+    {
+      "party": "Bersatu",
+      "posture": "Isolated third force. Survival play, not victory.",
+      "base_case": "Model: 0-1 seats. Tun Faisal (Sikamat) is the only credible path; everywhere else Bersatu is a spoiler.",
+      "to_win": [
+        "Concentrate everything on Sikamat + one other winnable urban-Malay mixed seat. Do not campaign the state — campaign 2 seats.",
+        "Own the 'Bersatu is not PN' distinction. Umno's 'we toppled PN once' jibe frames Bersatu as PN's baggage. Reject that publicly and campaign as a clean-slate Malay reformist alternative to both blocs.",
+        "Convert soft-PN youth Malay voters in Sikamat via TikTok. Tun Faisal is a known face; use it.",
+        "Accept the spoiler role in Malay-mixed 3-ways as a structural gift you cannot avoid — but do not amplify it. Any seat where Bersatu takes >5% helps BN, not you."
+      ],
+      "failure_mode": [
+        "If Bersatu splits the anti-BN Malay vote in Klawang, Kota, Sikamat without winning any of them, party enters 2027 with zero NS seats and Muhyiddin's leadership question opens.",
+        "If the 'wasted vote' PH counter lands, Bersatu voter share compresses from 8-12% to under 5% state-wide and the party ceases to be a factor.",
+        "If Marzuki-style Umno attacks continue without a strong Bersatu counter, the party becomes 'the party that helped BN win NS' — a brand problem heading into GE16."
+      ]
+    }
+  ],
+  "community_signals": [
+    {
+      "channel": "Ceramah attendance (journalist reports)",
+      "signal": "BN",
+      "note": "The Vibes 16 Jul: BN Rembau/Kuala Pilah ceramah noticeably larger than PH. BN Comms 15 Jul: ~15,000 attended Paroi machinery launch. No PH gathering of comparable size reported this week."
+    },
+    {
+      "channel": "Ground-report journalists",
+      "signal": "Mixed",
+      "note": "CNA (Melissa Goh Seremban): 'blue wave' from south building; Malaysiakini/KiniGuide: BN-PN pact structural advantage; FMT: PH went with veteran candidates as defensive move. Consensus tilt: BN advantage, not landslide."
+    },
+    {
+      "channel": "Party ops signals",
+      "signal": "Mixed",
+      "note": "Loke publicly called Umno NS 'traitors and rebels' (via KiniTV FB) — sharpens PH tone. UMNO NS chief Jalaluddin publicly frustrated at Bersatu-friendly PDM branch closures (Instagram reel). Both sides in higher-tempo ops."
+    },
+    {
+      "channel": "WhatsApp / private groups (as reported)",
+      "signal": "Unclear",
+      "note": "Not directly observable. Fact-checkers (AFP 17 Jul) flagged a months-old Anwar clip being recirculated as reaction to Johor — pattern suggests high private-group misinformation volume."
+    },
+    {
+      "channel": "Local commentators / editorial columns",
+      "signal": "Mixed",
+      "note": "Star 'It's Just Politics' column (19 Jul): NS is 'ultimate litmus test' for new alignment. Sinar Harian editorial: 'PH sells performance, BN–PN chants Malay-Islamic unity'. Newswav long-form analyst: BN+PN 50%, PH 35%, hung 15% (see Polls block)."
+    }
   ],
   "coordinated_flags": [
-    "Two Bersatu-aligned Telegram channels amplified identical royal-dispute content within 40-minute window on 15 Jul.",
-    "Suspicious burst of new pro-BN Facebook pages registered in Seremban, Port Dickson between 5-12 Jul — content, not clear authenticity signal yet."
+    {
+      "timestamp": "2026-08-02 07:38",
+      "note": "**FINAL FLAG — MODEL LESSON.** Post-election review: the UMNO+PAS vote consolidation flagged repeatedly in narratives_up (Hadi's PAS-vote-BN directive, PN mega-ceramah, Sanusi Malay-vote framing) proved decisive but the model's priors under-weighted the effect by 6pp of seat share. In future NS/Malaysian rural elections, informal Malay-party cooperation should be modelled at higher confidence when both Bersatu-PN internal splits AND explicit vote-transfer statements from party leaders coincide. No fabricated content flagged post-poll. AFP-flagged fakes (Zahid quit, EC early-vote count) did not have detectable material impact on turnout or result."
+    },
+    {
+      "timestamp": "2026-08-01 20:15",
+      "note": "**Ong Kian Ming revised BN-PN projection DOWN to 17 seats** (from 23-25 the previous day). Rare same-day revision from a public analyst. Straits Times noted 6 of 10 remaining seats are Malay-majority and would help BN-PN 'get close to two-thirds'. No fabricated content, but a material projection shift landed within counting-hour narrative window."
+    },
+    {
+      "timestamp": "2026-08-01 07:44",
+      "note": "**MACC opens 4 cash-distribution investigations** (2 candidates, 2 voters) in parallel to police's 3 IPs + 72yr-old Tampin TikTok RM300 police report. Enforcement noise consistent with prior 4-day pattern — no criminal escalation triggered before silence."
+    },
+    {
+      "timestamp": "2026-08-01 07:44",
+      "note": "**AFP Fact Check confirmed TWO fabricated news graphics** circulating during silence period: (a) fake 'DPM Zahid quits Unity Govt' quote — his office denied to AFP on 29 Jul as 'fake'; (b) fake EC infographic purporting early-vote counts — EC officially denied on FB 29 Jul, stating early-vote counting only begins 5pm 1 Aug after voting completes. Closing coordinated disinformation event before silence, targeting Malay-language WhatsApp/Telegram/TikTok."
+    },
+    {
+      "timestamp": "2026-07-31 19:58",
+      "note": "**Ilham Centre projection** (BN-PN 22 / PH 9 / TCTC 5) released on final campaigning day. Timing gives BN-PN 24h+ of unopposed narrative amplification into silence period. Framing explicitly cites 'Malay unity, political stability, prevent PH win' as decisive with Malay fence-sitters. Not disinformation, but signals coordinated closing narrative. Ong Kian Ming's parallel reaffirmation (23-25 range) landed same-day."
+    },
+    "[verified] **Anwar's Munajat Perdana sequence completed (30 Jul night, two locations).** Linggi Bermunajat 7.27pm + Kuala Pilah Dataran Melang 9.15pm with Sheikh Khaleel Ismael Elias, Sheikh Mahmood Al Wasabi, Habib Nael Ben Taher, Angham Anisah. Framing: 'Douse the fire of slander and racial incitement by remembrance of Allah'. [RTM Portal](https://berita.rtm.gov.my/mandat/berita/senarai-berita-mandat/berita/senarai-artikel/pm-dijadual-hadir-program-selawat-munajat-perdana-di-negeri-sembilan/).",
+    "[watch] **PN Ceramah Mega Biru-kan Port Dickson tonight (31 Jul 9pm, Dewan DJ The Grandis Batu 8 Teluk Kemang).** Closing PN-BN set-piece. [YouTube](https://www.youtube.com/watch?v=Qbrm8sdyZVU).",
+    "[verified] **Anwar pondok-schools upgrade allocation post-poll (Linggi 30 Jul).** Compared to Perak + Kelantan rollout. Direct religious-school constituency pitch. [Sinar Harian](https://pru.sinarharian.com.my/info-berita/22854/peruntukan-naik-taraf-sekolah-pondok-negeri-sembilan-diumum-selepas-prn---anwar).",
+    "[verified] **SCMP amplifies Anwar Tabung Haji framing (30 Jul).** 'Anwar seizes on haj fund report ahead of Negeri Sembilan election.' International-press signal that PH Malay-vote pitch is landing. [SCMP](https://www.scmp.com/week-asia/politics/article/3362397/malaysias-anwar-seizes-haj-fund-report-ahead-negeri-sembilan-election?pgtype=live).",
+    "[verified] **3 more vote-buying reports lodged (Wed 30 Jul).** 80 more ceramah permits approved = 689 of 715 total since nomination day. Enforcement noise continues. [The Star](https://www.thestar.com.my/news/nation/2026/07/30/negri-polls-three-reports-lodged-over-alleged-vote-buying).",
+    "[verified] **Fahmi Fadzil closing pitch: 'Choose anti-corruption leaders who do not shield wrongdoers' (30 Jul).** Repositions Sanusi + Shamsulkahar probes as governance choice for voters. [Bernama Radio](https://www.bernama.com/radio/news.php?id=2587800).",
+    "[verified] **Utusan editorial: 'BN-PN pact must be proven at ballot' (30 Jul).** First explicit UMNO-aligned framing that ballot outcome is the pact viability test. [Utusan](https://www.utusan.com.my/berita/2026/07/persefahaman-bn-pn-perlu-diteruskan-mesti-menang-prn-negeri-sembilan/).",
+    "[watch] **Contest field final: PH 36 seats, BN 25, Bersatu 24 (own logo), PN 11, 4 Independents + Berjasa/ASLI/PSM one each.** 103 total candidates. 867,151 ordinary voters.",
+    "[verified-major] **Hadi Awang formally directs PAS members to vote BN in non-PN seats (Wed 30 Jul, Seremban Mega Birukan Talk).** First public PAS party-leader directive locking in pact reciprocity. Discipline signal. [The Star](https://www.thestar.com.my/news/nation/2026/07/30/negri-polls-abdul-hadi-instructs-pas-members-to-vote-for-bn).",
+    "[verified-major] **Hamzah Zainudin: PN cedes NS MB pick to BN (30 Jul).** Pact operational discipline explicit. Denies rift. [FMT](https://www.freemalaysiatoday.com/category/nation/2026/07/30/pn-leaving-negeri-sembilan-mb-pick-to-bn-says-hamzah).",
+    "[verified] **Anwar apologises to Indian community for 'illegal temple' remark (Klana Resort, 29 Jul).** ST frames as 'last-ditch' Indian-vote consolidation. [ST](https://www.straitstimes.com/asia/se-asia/negeri-sembilan-election-indian-voters-could-be-key-to-whether-anwars-ph-can-retain-the-state?ref=top-stories).",
+    "[verified] **Straits Times consensus solidifies against PH (30 Jul).** 'Most punters predicting third successive state polls loss.' BN-PN expected 19+ seats for simple majority. Malays 23 of 36 seats. [ST](https://www.straitstimes.com/newsletter/malaysia-edition-another-loss-for-anwar-s-ph-in-negeri-sembilan).",
+    "[verified] **Anwar deploys Tabung Haji RCI as Malay-vote weapon (30 Jul).** 'Tabung Haji is not a race issue but failure to manage people's trust.' Direct pitch to Malay voters worried about state assets. [YouTube (Astro AWANI)](https://www.youtube.com/watch?v=bvf7VW0jlsk).",
+    "[verified] **4,481 ceramah held across campaign period.** 318 additional Johor police mobilised to assist NS polls. High-intensity closing week. [The Star](https://www.thestar.com.my/news/nation/2026/07/30/negri-polls-318-johor-police-personnel-mobilised).",
+    "[verified] **Hadi admits NS 'more challenging than Johor'.** Publicly acknowledges two Bersatu MLAs pulled out from pre-election VoC — PN's own Bersatu spoiler cost the pre-election opportunity. [FMT](https://www.freemalaysiatoday.com/category/nation/2026/07/30/hadi-reveals-why-pn-let-umno-lead-in-johor-race).",
+    "[verified] **Mat Sabu: 'State polls a referendum to reject BN.'** Framing polls as protest vote against 'backdoor government' after 14 UMNO MLAs withdrew last cycle. [The Star](https://www.thestar.com.my/news/nation/2026/07/30/negri-polls-respect-peoples-mandate-says-mohamad-sabu).",
+    "[verified] **Anwar Grand Finale Nilai 29 Jul: 'Give Aminuddin another term.'** Acknowledged shortcomings including unfinished housing, Orang Asli, Indian community. Framing: 'first to apologise'. [Malay Mail](https://www.malaymail.com/news/malaysia/2026/07/30/give-aminuddin-another-term-to-make-state-and-malaysia-regional-examples-anwar-tells-negeri-sembilan-voters/229504).",
+    "[verified-major] **Jempol MP Shamsulkahar (UMNO) now under police investigation (29 Jul).** IP opened under S.505(b) Penal Code + S.4(A)(1) EOA + S.233 CMA over alleged links between DAP and Sultan Selangor insult image. 9 police reports. Second UMNO operative under probe (after Rembau UMNO's Shukri) in same campaign. [FMT](https://www.freemalaysiatoday.com/category/nation/2026/07/29/cops-investigating-jempol-mp-for-ceramah-remarks), [Malay Mail](https://www.malaymail.com/news/malaysia/2026/07/29/police-investigate-jempol-mp-after-report-over-allegedly-seditious-campaign-speech/229398).",
+    "[verified] **EC debunks viral 'PN leading in early votes' infographic (29 Jul).** Early ballots only counted from 5pm Saturday. Coordinated disinformation event confirmed. [FMT](https://www.freemalaysiatoday.com/category/nation/2026/07/29/ec-denies-pn-leading-in-negeri-sembilan-early-votes).",
+    "[verified] **Anwar 'personally oversee' Indian community pledge (Klana Resort 29 Jul).** PH's most explicit ethnic-community consolidation pitch of the campaign. [The Star](https://www.thestar.com.my/news/nation/2026/07/29/i-will-039personally-oversee039-affairs-of-indian-community-says-anwar).",
+    "[verified] **Zahid backs vote-buying probe (29 Jul).** UMNO president publicly reinforces discipline over pact operatives. [Malay Mail](https://www.malaymail.com/news/malaysia/2026/07/29/zahid-backs-police-investigation-into-alleged-vote-buying-ahead-of-negeri-sembilan-poll/229472).",
+    "[verified] **Loke: 'PH momentum at strongest' (Betaria Grand Finale, 29 Jul night).** Targets 75-80% turnout. Referenced palace neutrality statement as debunking DAP-palace claims. First PH acknowledgement that palace intervention worked. [The Edge](https://theedgemalaysia.com/node/812542).",
+    "[verified] **PN Ceramah Mega Biru-kan Seremban held 29 Jul night at Dewan Perdana KRS.** Speakers: Hadi, Hamzah, Mukhriz, Sanusi, Khaled Nordin, Ahmad Maslan, Alwi Che Ahmad, Dominic Lau. Full BN+PN joint stage. [YouTube](https://www.youtube.com/watch?v=IqR1EAgRbg0).",
+    "[watch] **Kuala Pilah Berselawat tonight (30 Jul, Dataran Melang).** PH closing spiritual set-piece with Sheikh Khaleel Ismael Elias, Sheikh Mahmood Al Wasabi, Habib Nael Ben Taher, Angham Anisah.",
+    "[verified-major] **Court of Appeal GRANTED DKU committal stay (29 Jul).** Three-judge bench (Azhahari, Ahmad Kamal, Latifah) granted interim stay pending early disposal of appeal. Case management 30 Jul. Committal proceedings stayed against all six Undangs plus Tunku Besar Tampin. Royal-institution 3R vector formally defused for the campaign runway. [The Edge](https://theedgemalaysia.com/node/812445).",
+    "[verified] **PH launching 24-hour TikTok livestream tomorrow night (Fahmi 29 Jul).** Continuous livestream through polling day — candidates plus influencers. First of its scale in a Malaysian state election. Targeting 16 PKR-contested seats especially. [Malay Mail](https://www.malaymail.com/news/malaysia/2026/07/29/fahmi-pakatan-plans-24-hour-tiktok-livestream-to-reach-young-negeri-sembilan-voters/229459).",
+    "[verified] **Anwar's packed schedule 29 Jul.** Chennah tea (Loke's seat), Temu Anwar Paroi, Klana Resort Indian community dinner, Betaria (9pm) + Desa Cempaka Nilai (10.30pm) Grand Finales. Full PH top brass. [NST](https://www.nst.com.my/news/regional/2026/07/1499491/n9-polls-packed-schedule-pm-anwar-today).",
+    "[verified] **62 police reports, 19 IPs opened (up from 53/16).** 76 more ceramah permits approved (612 total). Includes new S.11 EOA IP for attempted vote-buying via WhatsApp in Kuala Klawang, Jelebu. [Malay Mail](https://www.malaymail.com/news/malaysia/2026/07/29/negeri-sembilan-polls-police-receive-62-reports-open-19-investigation-papers-over-offences/229390).",
+    "[verified] **Sanusi LOD campaign hits first recipient Sathia (Hulu Selangor PKR).** PAS election director confirmed further LOD recipients queued. Sanusi's FB post reached 56k likes / 6.2k comments / 3.2k shares. Significant PN Malay-base mobilisation signal. [Focus Malaysia](https://focusmalaysia.my/unjust-to-boycott-dr-sathia-professionally-when-his-animosity-with-kedah-mb-is-merely-political-matter/).",
+    "[verified] **Muhyiddin escalates Bersatu spoiler play.** Publicly challenged UMNO to withdraw Selangor support. Queried BN-PN 'two manifestos' framing. Jana Wibawa graft trial resumes 17 Aug. [FMT](https://www.freemalaysiatoday.com/category/nation/2026/07/29/bersatu-leader-challenges-umno-to-pull-support-for-selangor-govt), [Harapan Daily](https://harapandaily.com/2026/07/29/cium-mulut-tapi-dua-manifesto-muhyiddin-soal-bn-pn-nak-guna-yang-mana/).",
+    "[verified] **PH pushback on Ong Kian Ming forecast (Aminuddin + Fahmi 29 Jul).** 'Voters decide, not analysts.' Morale defence rather than data. UTM's Prof Mazlan Ali still rates race '50-50'. [The Star](https://www.thestar.com.my/news/nation/2026/07/29/the-people-will-decide-not-analysts-says-aminuddin).",
+    "[watch] **867,151 ordinary voters eligible Saturday.** 103 candidates for 36 seats. EC targets 72-75% general turnout. Below 70% would make Chinese/urban vote more decisive.",
+    "[verified] **Early voting closed at 91.06% turnout (28 Jul).** 14,995 of 16,467 in-person eligible voted. Military 91%+, police 90%+. Exceeded EC's 90% target. Uniformed vote historically leans BN. [CNA](https://www.channelnewsasia.com/watch/malaysia-politics-early-voting-concludes-in-negeri-sembilan-91-voter-turnout-6283371), [Sinar Harian](https://www.sinarharian.com.my/ampArticle/789711).",
+    "[verified-major] **Sanusi shifts to counter-attack (28 Jul evening).** Filed LOD against PKR Selangor election director Sathia Prakash. Historical defence citing Stanley (1946), Killearn (1949), Ogmore (1957). Sathia partially conceded a phrasing error. Sanusi creating dual legal tracks (criminal + civil defamation). Still has not been called for questioning. [FMT](https://www.freemalaysiatoday.com/category/nation/2026/07/28/sanusi-threatens-to-sue-pkr-man-for-misrepresenting-ceramah-remarks), [The Star](https://www.thestar.com.my/news/nation/2026/07/28/sanusi-defends-tanah-melayu-remarks), [NST](https://www.nst.com.my/news/nation/2026/07/1498660/sanusi-serve-lods-over-alleged-distortion-tanah-melayu-remarks).",
+    "[verified] **Second police report against Sanusi confirmed (28 Jul).** NS police chief Alzafny Ahmad confirmed. IP under S.505(b) Penal Code + S.233 CMA + S.4A(1) EOA. Rembau UMNO leader also being called separately over 11 police reports. Statewide: 53 election-related police reports; 16 IPs open. [Malay Mail](https://www.malaymail.com/news/malaysia/2026/07/28/police-to-question-kedah-mb-rembau-umno-leader-over-n-sembilan-polls-remarks/229231).",
+    "[verified-major] **PN election director Muhammad Sanusi Md Nor under police investigation (28 Jul).** IP opened under Section 505B Penal Code + Section 233 CMA over 23 Jul Jempol 'Tanah Melayu' ceramah. 2 police reports, several witnesses called. First major PN figure under criminal probe in final week. Sanusi issued defensive statement claiming remarks did not question non-Malay citizenship. [The Star](https://www.thestar.com.my/news/nation/2026/07/28/cops-to-quiz-sanusi-over-remarks-at-ceramah-says-negri-police-chief), [Asia News Hub](https://asianewshub.com/en/sanusi-defends-tanah-melayu-remarks/).",
+    "[verified-major] **DKU committal proceedings ADJOURNED to 28 Sept 2026 (28 Jul).** Six Undangs filed interim stay Monday night; Court of Appeal hears stay tomorrow 29 Jul. Recusal application against Justice Roz Mawar also adjourned. Effectively removes royal-institution attack vector from final 96 hours of campaigning. [The Edge](https://theedgemalaysia.com/node/812256), [Malaysiakini](https://www.malaysiakini.com/news/780815).",
+    "[verified] **BN chairman Zahid publicly reminds parties to respect NS royal institution (28 Jul).** Aligns BN with Palace, distances from Sanusi/PN excess. [The Star](https://www.thestar.com.my/news/nation/2026/07/28/zahid-reminds-all-to-respect-negri-royal-institution).",
+    "[verified] **Early voting turnout 86.4% at 2pm (28 Jul).** Military 84.6%, police 90.4%. 20/38 centres closed by 2pm. EC targeting 90% by close. Historically leans BN. [The Star](https://www.thestar.com.my/news/nation/2026/07/28/negri-polls-early-voting-turnout-at-864-as-of-2pm-says-ec).",
+    "[verified] **EC targets 72-75% general polling turnout Saturday.** Full electorate 889,490. Below 70% would make Chinese/urban vote more decisive. [Malay Mail](https://www.malaymail.com/amp/news/malaysia/2026/07/28/negeri-sembilan-polls-ec-targets-voter-turnout-of-75pc-on-saturday/229263).",
+    "[analyst-forecast] **Ong Kian Ming projects BN-PN 23-25 seats (27 Jul evening).** DAP ex-Bangi MP publishes public forecast with Malay-turnout 80%, combined BN-PN Malay support >70%. Higher than our model's ~21 median. First major analyst call of the campaign. [FMT](https://www.freemalaysiatoday.com/category/nation/2026/07/27/bn-pn-poised-to-take-negeri-sembilan-says-kian-ming), [The Edge](https://theedgemalaysia.com/node/812097).",
+    "[verified] **NS police investigating TikTok video about royal institution (27 Jul).** 11 police reports; investigated under Election Offences Act, Penal Code, and Communications and Multimedia Act. Interpretive: first social-media 3R prosecution track of this campaign; follows Palace's warning issued same day. [NST](https://www.nst.com.my/newssummary/1496564).",
+    "[verified] **Mohamad Sabu ceramah at Astana Raja (Kota), 27 Jul night.** PH Amanah president counter-messages Malay-nationalist framing: 'blaming other races' achievements does not help the Malay economy — work hard to lift your own community'. Framing pushback against 23 Jul Jempol 'Tanah Melayu' line. [Astro AWANI](https://www.astroawani.com/berita-politik/salahkan-kejayaan-kaum-lain-tidak-beri-manfaat-kepada-ekonomi-orang-melayu-mohamad).",
+    "[verified] **'Tanah Melayu' controversy — defence piece (27 Jul).** Politician behind the 23 Jul Jempol PN-BN ceramah line published a defence in Malaysiakini claiming the phrasing traces to 1940s political concepts. Extends the Malay-nationalist coordination cycle into final week. [Malaysiakini](https://www.malaysiakini.com/news/780717).",
+    "[verified] **NS Palace formal statement 27 Jul** — Palace warned political parties against exploiting the royal institution for campaign purposes and explicitly denied involvement with any party. First palace intervention of the campaign. Interpretive: reinforces palace neutrality; removes YDPB titah as a potential last-72h wedge. Source: The Edge Markets, 27 Jul.",
+    "[verified] **PN launches separate NS manifesto 26 Jul** — 'PN Sepakat Hebatkan Negeri Sembilan', 6 pillars. PN opted not to co-author with BN despite pact. Samsuri floats PN-BN cooperation extension to GE16. Interpretive: first pact-differentiation, but not a break — reads as marker-laying for post-election leverage.",
+    "[verified] **Bersatu manifesto launched 25 Jul** — 76 pledges, 9 pillars. Standout: enact law for equal annual assemblymen allocations regardless of party. Interpretive: novel anti-incumbency line targeting BN and PH heartland privileges — could bite in tight three-ways.",
+    "[verified] **BN manifesto launched 24 Jul, Bandar Sendayan** — 9 thrusts, 88 action plans, 15 'Salam Sejahtera' initiatives; theme 'kestabilan dibina, negeri dijaga, rakyat dibela, kemakmuran dicipta'. Delivery-monitoring unit proposed. 50k-jobs pledge positioned above PH's 30k.",
+    "[verified] **Tok Mat's non-Malay reassurance 26 Jul, Rantau** — 'Non-Malays needn't fear marginalisation if BN wins; BN remains primary decision-maker as majority shareholder in the pact.' Maps onto Vodus's PH 59% / BN 20% Chinese-vote finding. Interpretive: defensive framing suggests Chinese firewall is thinner than pact math implied.",
+    "[verified] **Fahmi 26 Jul**: NS polls 'should be a contest of ideas, not a stage for racial politics' — positions Anwar government against wedge tactics ahead of final 5 days.",
+    "[verified] **Six plaintiffs applied to recuse presiding judge in DKU royal-dispute case** (Anak Nogori weekly, 4 days before 28 Jul committal hearing). Legal track heating up alongside campaign end-game.",
+    "[verified] **Section 435 (mischief by fire) investigation paper opened** among 14 total — first physical-property-damage-related case of the campaign. 473 of 499 ceramah permit applications approved; 33 police reports.",
+    "[verified] **Vodus Research NS poll published 22 Jul night** (n=437, 9-21 Jul, OMTOS online panel post-stratified to DOSM). Statewide: PH 42 · BN 35 · PN 7 · Ind 2 · Undecided 14. Seat projection: PH 17 · BN 15 · PN 2 · TCTC 2 (hung). Vodus was the single most-accurate GE15 pollster — reliability A. Small NS sample vs Vodus Johor 1,303 is the caveat.",
+    "[verified] **PN formally directed members to vote BN in 25 seats** (22 Jul, FMT). Reciprocal to Zahid's November directive of BN voting PN in the 11 PN seats. PAS confirmed the BN-PN understanding was reached 14 Jul, four days before nomination. Full pact discipline complete on both sides.",
+    "[verified] **NS Chinese Assembly Hall balik-mengundi call** (22 Jul, FMT). First state-level Chinese civil-society mobilisation of the campaign — direct turnout push targeted at KL/Selangor/Johor-based NS voters.",
+    "[verified] **Bukit Aman deploys 200 security personnel** (22 Jul, The Star). Scale matches Johor peak-campaign staffing.",
+    "[verified] **JHEAINS suspends teaching credentials of 8 candidates** per Yang di-Pertuan Besar titah (22 Jul, Utusan). First titah-level intervention. Procedural respect for democratic process, not a sanction.",
+    "[inferred] Coordinated Bersatu-aligned Telegram push contesting Vodus methodology within 6 hours of poll release. Cross-channel identical language ('online panel unreliable') suggests coordinated messaging.",
+    "[verified] PAS SG Takiyuddin Hassan ordered PAS members in Tampin area to vote BN in Gemas + Gemencheh AND MCA in Repah. Recorded in Bukit Rokan ceramah (21 Jul), amplified across PAS pages 22 Jul. Strongest pact-discipline directive of campaign — same playbook as Johor.",
+    "[verified] 'PBN' branding push from Wawasan side. Hamzah Zainudin proposed the name 21 Jul night; Umno NS divisions publicly pushed back 22 Jul morning. Pact-branding disagreement visible in official statements, not just online.",
+    "[verified] Think-tank finding overnight: NS voters not linking polls with the royal dispute. First published finding on this specific concern — downgrades the previous royal-dispute coordinated push's traction.",
+    "[inferred] Coordinated push reframing PH manifesto as 'janji manis 2018' continued but softened as Anwar's visit dominated the news calendar. Talking point still visible on BN-aligned pages, pattern weakening.",
+    "[inferred] Fresh evening push (Tue 21 Jul): BN-aligned pages coordinated on the 50k-vs-30k comparison as 'BN 1.67x better than PH' — clean numeric framing spreading identically across FB pages within a 2-hour window post-Zahid remarks.",
+    "[verified] Zahid publicly denied Tue-afternoon social-media rumour of a BN/PN/GPS/GRS coalition meeting. Rumour vector unclear — flag for monitoring.",
+    "[verified] Fact-check event: months-old Anwar clip about NS-poll postponement being misrepresented on TikTok/Facebook as reaction to Johor defeat. AFP Fact Check 17 Jul flagged. High private-group circulation likely.",
+    "[downgraded] Yesterday's small push on X reframing Zahid MB-claim as 'BN grabbing PAS's rightful share' fizzled overnight.",
+    "[verified] Royal-dispute framing ('BN betrayed the Undang / palace') still recirculating on Bersatu-aligned Telegram channels — asset unchanged since 15 Jul burst. Onn Hafiz's Sunday rebuttal confirms it's landing."
   ],
   "demographics": [
-    {"segment": "Malay voters (55%)", "lean": "BN/PN", "lean_pct": 58, "drivers": "Johor spillover + Umno unity narrative; Bersatu drains 10-15% back from opposition Malay pool."},
-    {"segment": "Chinese voters (23%)", "lean": "PH", "lean_pct": 74, "drivers": "DAP incumbent loyalty. But turnout risk — Johor Chinese turnout was ~55%."},
-    {"segment": "Indian voters (16%)", "lean": "PH (soft)", "lean_pct": 52, "drivers": "Traditional MIC vs DAP-Indian dynamic, split with generational lean toward PH."},
-    {"segment": "Orang Asli (~1%)", "lean": "Mixed / BN edge", "lean_pct": 48, "drivers": "Handful of seats in Jelebu/Jempol; Asli party (Jeram Padang) draws first-nation-first vote."},
-    {"segment": "Youth 18–25", "lean": "PN → BN shift", "lean_pct": 51, "drivers": "TikTok signal shows youth Malay swing from PN 2022→BN 2026 after Johor."},
-    {"segment": "First-time voters", "lean": "BN (small edge)", "lean_pct": 49, "drivers": "Undi18 cohort more BN-friendly than 2022 pattern per Ilham Centre 2025 indicators."},
-    {"segment": "Urban", "lean": "PH", "lean_pct": 62, "drivers": "Seremban / Nilai / Port Dickson centres. Cost-of-living cuts both ways."},
-    {"segment": "Semi-urban", "lean": "BN (mild)", "lean_pct": 51, "drivers": "Highest volatility band. Bersatu likely to peel."},
-    {"segment": "Rural", "lean": "BN/PN", "lean_pct": 62, "drivers": "Umno grassroots machine, PAS-branch loyalty. Johor precedent strong."},
-    {"segment": "Women", "lean": "Even", "lean_pct": 50, "drivers": "No clear gender-cleavage signal in current data."},
-    {"segment": "Civil servants", "lean": "BN (mild)", "lean_pct": 55, "drivers": "GST/COLA sensitivity; Umno remains preferred incumbent-party network."},
-    {"segment": "SME owners", "lean": "PH", "lean_pct": 54, "drivers": "PH policy on subsidy targeting, DAP business-friendly image."},
-    {"segment": "Middle-income households", "lean": "PH (soft)", "lean_pct": 51, "drivers": "But EPF withdrawal debate + petrol subsidy rationalisation drag."}
+    {
+      "segment": "Malay voters (55%)",
+      "lean": "BN/PN",
+      "lean_pct": 58,
+      "drivers": "Johor spillover + Umno unity narrative; Bersatu drains 10-15% back from opposition Malay pool."
+    },
+    {
+      "segment": "Chinese voters (23%)",
+      "lean": "PH",
+      "lean_pct": 74,
+      "drivers": "DAP incumbent loyalty. But turnout risk — Johor Chinese turnout was ~55%."
+    },
+    {
+      "segment": "Indian voters (16%)",
+      "lean": "PH (soft)",
+      "lean_pct": 52,
+      "drivers": "Traditional MIC vs DAP-Indian dynamic, split with generational lean toward PH."
+    },
+    {
+      "segment": "Orang Asli (~1%)",
+      "lean": "Mixed / BN edge",
+      "lean_pct": 48,
+      "drivers": "Handful of seats in Jelebu/Jempol; Asli party (Jeram Padang) draws first-nation-first vote."
+    },
+    {
+      "segment": "Youth 18–25",
+      "lean": "PN → BN shift",
+      "lean_pct": 51,
+      "drivers": "TikTok signal shows youth Malay swing from PN 2022→BN 2026 after Johor."
+    },
+    {
+      "segment": "First-time voters",
+      "lean": "BN (small edge)",
+      "lean_pct": 49,
+      "drivers": "Undi18 cohort more BN-friendly than 2022 pattern per Ilham Centre 2025 indicators."
+    },
+    {
+      "segment": "Urban",
+      "lean": "PH",
+      "lean_pct": 62,
+      "drivers": "Seremban / Nilai / Port Dickson centres. Cost-of-living cuts both ways."
+    },
+    {
+      "segment": "Semi-urban",
+      "lean": "BN (mild)",
+      "lean_pct": 51,
+      "drivers": "Highest volatility band. Bersatu likely to peel."
+    },
+    {
+      "segment": "Rural",
+      "lean": "BN/PN",
+      "lean_pct": 62,
+      "drivers": "Umno grassroots machine, PAS-branch loyalty. Johor precedent strong."
+    },
+    {
+      "segment": "Women",
+      "lean": "Even",
+      "lean_pct": 50,
+      "drivers": "No clear gender-cleavage signal in current data."
+    },
+    {
+      "segment": "Civil servants",
+      "lean": "BN (mild)",
+      "lean_pct": 55,
+      "drivers": "GST/COLA sensitivity; Umno remains preferred incumbent-party network."
+    },
+    {
+      "segment": "SME owners",
+      "lean": "PH",
+      "lean_pct": 54,
+      "drivers": "PH policy on subsidy targeting, DAP business-friendly image."
+    },
+    {
+      "segment": "Middle-income households",
+      "lean": "PH (soft)",
+      "lean_pct": 51,
+      "drivers": "But EPF withdrawal debate + petrol subsidy rationalisation drag."
+    }
   ],
   "narratives_up": [
-    {"title": "'Continue the Johor momentum' (BN)", "note": "Framing NS as the second domino. Reinforced by Zahid & Zambry.", "impact": "High"},
-    {"title": "Cost of living / subsidy rationalisation", "note": "Petrol RON95 targeting timeline, egg & rice prices. Dominant across all platforms.", "impact": "High"},
-    {"title": "'Aminuddin has served 18 years — time for change'", "note": "BN targeting his shift from Sikamat to Linggi as evidence he's uncertain of his own base.", "impact": "Medium"},
-    {"title": "Royal dispute as legitimacy question", "note": "Fading from the daily headline cycle but still active in Malay-language commentary.", "impact": "Medium"},
-    {"title": "Bersatu as spoiler", "note": "Growing DAP/PKR message that a Bersatu vote is a wasted vote helping BN.", "impact": "Medium"}
+    {
+      "title": "BN-PN two-thirds majority secured",
+      "note": "OFFICIAL. BN 18 + PN 7 = 25. Above 24-seat threshold. Ends 8-year PH rule.",
+      "impact": "Final"
+    },
+    {
+      "title": "Anwar unity government under pressure",
+      "note": "Loke (DAP sec-gen, Transport Minister) losing his own state seat is federal-level embarrassment. GE16 read-across dominates commentary.",
+      "impact": "Final"
+    },
+    {
+      "title": "UMNO+PAS informal cooperation validated",
+      "note": "The Hadi PAS-vote-BN directive worked. Model under-weighted this by 6pp.",
+      "impact": "Final"
+    },
+    {
+      "title": "Chennah upset (Loke -688)",
+      "note": "Model called PH win. Actual: Siow Kong Choon (MCA) won by 688. Ong Kian Ming's flagged race proved correct.",
+      "impact": "Final"
+    },
+    {
+      "title": "Bersatu 0/24 shutout",
+      "note": "Party's post-poll strategic position now weakest since 2020 Sheraton Move.",
+      "impact": "Final"
+    }
   ],
   "narratives_down": [
-    {"title": "Anwar's federal record", "note": "Less prominent than during Johor — PH pivoting to state-level competency framing.", "impact": "Low"},
-    {"title": "Anti-DAP racial framing", "note": "Neutralised by BN's need to hold Chinese-BN alliance credibility.", "impact": "Low"},
-    {"title": "PAS as leader of opposition", "note": "Reduced now that BN owns the anti-PH lead voice in NS.", "impact": "Low"}
+    {
+      "title": "PH's 19-seat floor breached badly",
+      "note": "Amirudin's minimum 19 target missed by 8 seats. Fahmi's 21-22 target off by 10-11.",
+      "impact": "Final"
+    },
+    {
+      "title": "Amanah wiped out",
+      "note": "0/7 seats. Contested only in mixed-Malay seats, all fell to PN or BN.",
+      "impact": "Final"
+    }
   ],
   "candidates": [
-    {"name": "Datuk Seri Mohamad Hasan (Tok Mat)", "party": "BN", "seat": "N27 Rantau",
-     "note": "UMNO deputy president, Foreign Minister. Running for a 6th term. Effectively BN's MB-in-waiting though not officially named. Widely popular; incumbency + star + 33% 2023 majority make Rantau close-to-safe."},
-    {"name": "Anthony Loke", "party": "PH-DAP", "seat": "N01 Chennah",
-     "note": "DAP SG, Transport Minister. Defending Chennah since 2013. Straight fight vs MCA. Symbolic seat for DAP prestige — losing would trigger internal reckoning."},
-    {"name": "Datuk Seri Aminuddin Harun", "party": "PH-PKR", "seat": "N32 Linggi",
-     "note": "Caretaker MB. Left his stronghold Sikamat (won it since 2008) to contest BN-held Linggi (2023 winner Faizal Ramli, 1,461 majority). Bold, potentially reckless: a loss ends his political career."},
-    {"name": "Datuk Seri Jalaluddin Alias", "party": "BN-UMNO", "seat": "N02 Pertang",
-     "note": "Jelebu MP + Negeri Sembilan UMNO chief. Defending Pertang. Coordinates BN state machinery."},
-    {"name": "Datuk Tun Faisal Ismail", "party": "Bersatu", "seat": "N13 Sikamat",
-     "note": "Bersatu high-profile candidate in the seat vacated by Aminuddin. Test case for whether Bersatu can hold Malay-mixed urban seats without PAS."},
-    {"name": "Nicole Tan", "party": "PH-DAP", "seat": "N21 Bukit Kepayang",
-     "note": "Incumbent since 2018. Straight fight vs PN newcomer. Chinese-super-safe (78% majority in 2023). Bellwether for DAP's Chinese firewall."},
-    {"name": "Datuk Bakri Sawir", "party": "PH-Amanah", "seat": "N04 Klawang",
-     "note": "Incumbent Amanah in a Malay-rural three-way vs PN + Bersatu. 2023 margin 6.3% — a canary for the Bersatu-spoiler effect on PH."}
+    {
+      "name": "Datuk Seri Mohamad Hasan (Tok Mat)",
+      "party": "BN",
+      "seat": "N27 Rantau",
+      "note": "UMNO deputy president, Foreign Minister. 6th term bid. Effectively BN's MB-in-waiting though not officially named. Spent Sunday with residents at BN Polling District Centre in Taman Kelab Tuanku, Mambau — grinding it out on foot despite safe-seat status."
+    },
+    {
+      "name": "Anthony Loke",
+      "party": "PH-DAP",
+      "seat": "N01 Chennah",
+      "note": "DAP SG, Transport Minister. Defending Chennah since 2013. Straight fight vs MCA's John Siow, who MCA president Wee explicitly called 'local boy who Loke forgot' at Titi ceramah Saturday. Loke countered at Seremban Central Market walkabout Sunday. MCA is trying to reframe the race as absentee-landlord vs local. Loke's 2023 majority was 20,500 (79%) — the seat is safe on paper but MCA has clearly picked it as the symbolic prize."
+    },
+    {
+      "name": "Datuk Seri Aminuddin Harun",
+      "party": "PH-PKR",
+      "seat": "N32 Linggi",
+      "note": "Caretaker MB. Sunday walkabout: Subuh at Masjid Jamek Pasir Panjang, breakfast with residents, then Taman Setia, Taman Kekatong, Rumah Rakyat Telok Pelandok, plus Indian-community meet-and-greet. Working the seat aggressively — the ground game he needs to compensate for BN's 1,461-vote 2023 margin."
+    },
+    {
+      "name": "Datuk Seri Jalaluddin Alias",
+      "party": "BN-UMNO",
+      "seat": "N02 Pertang",
+      "note": "Jelebu MP + Negeri Sembilan UMNO chief. Defending Pertang. Coordinates BN state machinery."
+    },
+    {
+      "name": "Datuk Tun Faisal Ismail",
+      "party": "Bersatu",
+      "seat": "N13 Sikamat",
+      "note": "Bersatu high-profile candidate in the seat vacated by Aminuddin. Test case for whether Bersatu can hold Malay-mixed urban seats without PAS."
+    },
+    {
+      "name": "Nicole Tan",
+      "party": "PH-DAP",
+      "seat": "N21 Bukit Kepayang",
+      "note": "Incumbent since 2018. Straight fight vs PN newcomer. Chinese-super-safe (78% majority in 2023). Bellwether for DAP's Chinese firewall."
+    },
+    {
+      "name": "Datuk Bakri Sawir",
+      "party": "PH-Amanah",
+      "seat": "N04 Klawang",
+      "note": "Incumbent Amanah in a Malay-rural three-way vs PN + Bersatu. 2023 margin 6.3% — a canary for the Bersatu-spoiler effect on PH."
+    }
   ],
   "risks": [
-    {"title": "Royal dispute reignition", "level": "med", "impact_seats": "±2-4",
-     "note": "If the Undang faction escalates via court filing or public statement before 1 Aug, PH loses moral-authority framing and BN gains 1-2 rural Malay seats."},
-    {"title": "Federal cabinet reshuffle / scandal", "level": "med", "impact_seats": "±1-3",
-     "note": "Anwar under pressure post-Johor. A defection or minister resignation would depress PH turnout."},
-    {"title": "Turnout below 65%", "level": "high", "impact_seats": "±3-5",
-     "note": "Johor turnout was 66%. Chinese-voter turnout is the single biggest driver of PH downside — every 5% drop costs PH ~2 Chinese-majority seats."},
-    {"title": "Major viral misinformation event", "level": "med", "impact_seats": "±1-3",
-     "note": "Deepfake or AI-generated race/religion content in final 72h. Historically favours whoever is trailing (currently PH)."},
-    {"title": "Bersatu-PAS reconciliation (last-minute PN unity)", "level": "low", "impact_seats": "±2-4",
-     "note": "If Muhyiddin/Hadi announce a joint appeal by 28 Jul, Bersatu could stand-down some candidates. Currently no signal."},
-    {"title": "Kuala Kubu Baharu-style anti-DAP racial campaign", "level": "med", "impact_seats": "±1-2",
-     "note": "Watch Malay-language TikTok for coordinated content targeting Loke, Nicole Tan, Chew Seh Yong."},
-    {"title": "Economic shock (RM/USD, oil price)", "level": "low", "impact_seats": "±0-2",
-     "note": "Ringgit under 4.70/USD watch. Fuel-subsidy timing could re-enter the cycle."}
+    {
+      "title": "Royal dispute reignition",
+      "level": "high",
+      "impact_seats": "±2-4",
+      "note": "UPGRADED from Medium. Onn Hafiz's public rebuttal today of 'BN traitors of the palace' framing, plus wider Telegram recirculation of the same content, confirm the narrative is landing in Malay-belt seats. Watch for a Balai Undang statement or court filing this week."
+    },
+    {
+      "title": "Federal cabinet reshuffle / scandal",
+      "level": "med",
+      "impact_seats": "±1-3",
+      "note": "Anwar under pressure post-Johor. A defection or minister resignation would depress PH turnout."
+    },
+    {
+      "title": "Turnout below 65%",
+      "level": "high",
+      "impact_seats": "±3-5",
+      "note": "Johor turnout was 66%. Chinese-voter turnout is the single biggest driver of PH downside — every 5% drop costs PH ~2 Chinese-majority seats."
+    },
+    {
+      "title": "Major viral misinformation event",
+      "level": "med",
+      "impact_seats": "±1-3",
+      "note": "Deepfake or AI-generated race/religion content in final 72h. Historically favours whoever is trailing (currently PH)."
+    },
+    {
+      "title": "Bersatu-PAS reconciliation (last-minute PN unity)",
+      "level": "low",
+      "impact_seats": "±2-4",
+      "note": "If Muhyiddin/Hadi announce a joint appeal by 28 Jul, Bersatu could stand-down some candidates. Currently no signal."
+    },
+    {
+      "title": "Kuala Kubu Baharu-style anti-DAP racial campaign",
+      "level": "med",
+      "impact_seats": "±1-2",
+      "note": "Watch Malay-language TikTok for coordinated content targeting Loke, Nicole Tan, Chew Seh Yong."
+    },
+    {
+      "title": "Economic shock (RM/USD, oil price)",
+      "level": "low",
+      "impact_seats": "±0-2",
+      "note": "Ringgit under 4.70/USD watch. Fuel-subsidy timing could re-enter the cycle."
+    }
   ],
   "polls": [
-    {"source": "Merdeka Center", "date": "2026-06-28", "method": "National mood tracker (extrapolated)",
-     "reliability": "A", "signal": "Malaysian voters lean BN+43 vs PH+31 nationally; NS-specific poll not yet released."},
-    {"source": "INVOKE", "date": "—", "method": "—",
-     "reliability": "A", "signal": "No NS state poll published as of nomination day."},
-    {"source": "Ilham Centre", "date": "2026-07-08", "method": "Focus groups + ground survey (Johor)",
-     "reliability": "B+", "signal": "Johor findings pointed to BN sweep — proved accurate. Suggests methodology transferable to NS Malay-belt."},
-    {"source": "The Vibes ground report", "date": "2026-07-16", "method": "Journalist ceramah observation",
-     "reliability": "C", "signal": "BN turnout at Rembau/Kuala Pilah events noticeably larger than PH. Qualitative only."},
-    {"source": "pilihanraya.my simulator", "date": "2026-07-18", "method": "10,000-sim electoral model",
-     "reliability": "B", "signal": "BN-PN majority in 9,993 / 10,000 simulations; median ~24 seats. Consistent with our model's directional call, slightly more BN-favourable."},
-    {"source": "Sinar Harian analyst projection", "date": "2026-07-18", "method": "Expert judgement",
-     "reliability": "B", "signal": "BN-PN 23-26 · PH 10-13 · Bersatu 0-1. Skews more anti-PH than our model."}
+    {
+      "source": "EC OFFICIAL FINAL",
+      "date": "2026-08-02",
+      "type": "FINAL OFFICIAL RESULT",
+      "result": "BN 18 / PN 7 / PH 11 · Turnout 72.64% (646,084 voters)",
+      "notes": "Announced by EC Chairman Ramlan Harun 11.57pm 1 Aug 2026. BN+PN forms Negeri Sembilan government with two-thirds majority. PH lost Chennah (Loke), Linggi (Aminuddin MB), Sikamat, Ampangan, Paroi, Pilah, Repah, Chembong."
+    },
+    {
+      "source": "EC turnout tracker",
+      "date": "2026-08-01",
+      "type": "Turnout snapshot 4pm",
+      "result": "65.38% (562,133 of 859,760) — +3.49pp vs 2023 at same mark",
+      "notes": "Highest: Kota 72.1%, Seri Menanti 70.9%, Labu 70.9%. Lowest: Bahau, Lukut, Lobak at 59% (non-Malay-majority)."
+    },
+    {
+      "source": "The Edge live tally",
+      "date": "2026-08-01",
+      "type": "Unofficial early leads (5pm counting-hour)",
+      "result": "BN leading in 9 seats: Pertang, Juasseh, Pilah, Johol, Labu, Rantau, Gemas, Gemencheh, Repah",
+      "notes": "All Malay-majority. No mainstream PH or PN leads reported at same time."
+    },
+    {
+      "source": "Ong Kian Ming (revised)",
+      "date": "2026-08-01",
+      "type": "Public projection (revised down)",
+      "result": "BN-PN 17 / PH 9 (from yesterday 23-25)",
+      "notes": "Same-day revision on Straits Times. Still calls BN-PN win. 6 of remaining 10 seats Malay-majority — could push BN-PN close to two-thirds."
+    },
+    {
+      "source": "AFP Fact Check",
+      "date": "2026-07-31",
+      "type": "Disinformation confirmation",
+      "result": "TWO fabricated news graphics confirmed as fake: (1) Zahid quits Unity Govt (Zahid office denied); (2) EC early-vote counts (EC denied on FB 29 Jul)",
+      "notes": "Circulated during silence period on Malay-language social media. Not decisive but signals coordinated closing narrative."
+    },
+    {
+      "source": "MetMalaysia weather forecast",
+      "date": "2026-08-01",
+      "type": "Weather (indirect turnout driver)",
+      "result": "Clear skies morning all 7 districts; thunderstorms afternoon all districts except Port Dickson; 23-33°C",
+      "notes": "Favours morning BN-PN base + PD PN closing crowd. Late-day inland Seremban turnout at risk from thunderstorms."
+    },
+    {
+      "source": "Ong Kian Ming (individual analyst)",
+      "date": "2026-07-31",
+      "type": "Public projection",
+      "result": "BN-PN 23-25 seats",
+      "notes": "Reaffirmed publicly on final day. Loke at risk in Chennah, Aminuddin at risk in Linggi."
+    },
+    {
+      "source": "IDERC (IDEAS Research Centre)",
+      "date": "2026-07-31",
+      "type": "Assessment",
+      "result": "Too close to call — 68-70% turnout, 12-18% undecided, 8 marginals decide",
+      "notes": "62.3% certain to vote + 24% likely. 63.4% decided before nomination; 33.8% decided after; 14.8% typically decide on polling day."
+    },
+    {
+      "source": "Ilham Centre",
+      "date": "2026-07-31",
+      "type": "Projection (not survey poll)",
+      "result": "BN-PN 22 / PH 9 / TCTC 5 (Chennah, Linggi, Nilai, Repah, Temiang all BN)",
+      "notes": "Names 'Malay unity, political stability, prevent PH win' as decisive themes for Malay fence-sitters."
+    },
+    {
+      "source": "Vodus Research (NS state poll)",
+      "date": "2026-07-22",
+      "method": "OMTOS online panel, n=437 NS registered voters, 9-21 Jul, post-stratified to DOSM ethnic/age/gender within seat",
+      "reliability": "A",
+      "signal": "**Statewide popular vote: PH 42 · BN 35 · PN 7 · Ind 2 · Undecided 14.** Seat projection: PH 17 · BN 15 · PN 2 · TCTC 2 (hung, neither block at 19-seat majority). 8 of 10 close seats leaning PH. Trust in state government: PH lead. Vodus was the single most-accurate GE15 pollster. First proper state-level public poll of the NS campaign — this is the reference anchor going forward."
+    },
+    {
+      "source": "Merdeka Center",
+      "date": "2026-06-28",
+      "method": "National mood tracker (extrapolated)",
+      "reliability": "A",
+      "signal": "Malaysian voters lean BN+43 vs PH+31 nationally; NS-specific poll not yet released."
+    },
+    {
+      "source": "INVOKE",
+      "date": "—",
+      "method": "—",
+      "reliability": "A",
+      "signal": "No NS state poll published as of nomination day."
+    },
+    {
+      "source": "Ilham Centre",
+      "date": "2026-07-08",
+      "method": "Focus groups + ground survey (Johor)",
+      "reliability": "B+",
+      "signal": "Johor findings pointed to BN sweep — proved accurate. Suggests methodology transferable to NS Malay-belt."
+    },
+    {
+      "source": "The Vibes ground report",
+      "date": "2026-07-16",
+      "method": "Journalist ceramah observation",
+      "reliability": "C",
+      "signal": "BN turnout at Rembau/Kuala Pilah events noticeably larger than PH. Qualitative only."
+    },
+    {
+      "source": "pilihanraya.my simulator",
+      "date": "2026-07-18",
+      "method": "10,000-sim electoral model",
+      "reliability": "B",
+      "signal": "BN-PN majority in 9,993 / 10,000 simulations; median ~24 seats. Consistent with our model's directional call, slightly more BN-favourable."
+    },
+    {
+      "source": "Sinar Harian analyst projection",
+      "date": "2026-07-18",
+      "method": "Expert judgement",
+      "reliability": "B",
+      "signal": "BN-PN 23-26 · PH 10-13 · Bersatu 0-1. Skews more anti-PH than our model."
+    },
+    {
+      "source": "UPM Dr Nur Ayuni Mohd Isa",
+      "date": "2026-07-19",
+      "method": "Expert judgement (voter composition + 2023 + Johor spillover)",
+      "reliability": "B",
+      "signal": "Projects BN-PN 23-26 seats, PH 10-13. Bracket is identical to Sinar Harian's — emerging analyst consensus."
+    },
+    {
+      "source": "BN Umno NS chairman claim",
+      "date": "2026-07-19",
+      "method": "Partisan statement",
+      "reliability": "C",
+      "signal": "Jalaluddin Alias publicly claims BN alone can win 19+ seats and form govt without PN. Partisan framing, not evidence — but signals BN's internal expectation ceiling."
+    },
+    {
+      "source": "Newswav long-form analysis",
+      "date": "2026-07-17",
+      "method": "Independent analyst projection",
+      "reliability": "B",
+      "signal": "Third-party analyst projects BN+PN 19-21 seats, PH 15-18 seats. Explicit probability estimate: BN+PN 50% · PH 35% · hung 15%. Notably more PH-favourable than our model's 5%. Cited as counter-anchor."
+    },
+    {
+      "source": "Ilham Centre research (via Straits Times)",
+      "date": "2026-07-22",
+      "method": "Expert projection on Bersatu vote share",
+      "reliability": "B",
+      "signal": "Bersatu projected 10-13% of vote in urban/semi-urban seats (Paroi, Klawang, Lenggeng). Not a full seat projection, but the operative range for opposition-Malay bleed — within our internal working assumption of 8-12%."
+    }
   ],
   "markets": [
-    {"source": "Polymarket / Kalshi", "type": "Prediction market", "ph_gov": null, "bnpn_gov": null,
-     "note": "No listed contract for NS state election as of 19 Jul 2026."},
-    {"source": "The Edge Malaysia expert panel", "type": "Analyst consensus", "ph_gov": 15, "bnpn_gov": 82,
-     "note": "Post-Johor panel: BN likely to form govt. 3% hung-assembly tail."},
-    {"source": "pilihanraya.my model", "type": "Quant model", "ph_gov": 5, "bnpn_gov": 95,
-     "note": "10k-sim electoral model. More BN-confident than our estimate."},
-    {"source": "This dashboard", "type": "This model", "ph_gov": 5, "bnpn_gov": 95,
-     "note": "See section 1. Confidence: Medium."}
+    {
+      "source": "Polymarket / Kalshi",
+      "type": "Prediction market",
+      "ph_gov": null,
+      "bnpn_gov": null,
+      "note": "No listed contract for NS state election as of 19 Jul 2026."
+    },
+    {
+      "source": "The Edge Malaysia expert panel",
+      "type": "Analyst consensus",
+      "ph_gov": 15,
+      "bnpn_gov": 82,
+      "note": "Post-Johor panel: BN likely to form govt. 3% hung-assembly tail. Panel predates Vodus poll — likely to be revised down."
+    },
+    {
+      "source": "pilihanraya.my model",
+      "type": "Quant model",
+      "ph_gov": 5,
+      "bnpn_gov": 95,
+      "note": "10k-sim electoral model. Predates Vodus poll; expected to revise."
+    },
+    {
+      "source": "This dashboard",
+      "type": "This model",
+      "ph_gov": 32,
+      "bnpn_gov": 68,
+      "note": "See section 1. Confidence: Medium. Revised BN+PN 95% → 68% overnight on Vodus poll release."
+    }
   ],
   "changelog": [
-    {"timestamp": "2026-07-19 10:50", "summary": "Baseline forecast v1.0 initialised. BN+PN probability 95%. Field structure locked at nomination day (103 candidates, PH 36, BN 25, PN 11, Bersatu 24, others 7). 12 days to polling."},
-    {"timestamp": "2026-07-18 10:00", "summary": "Nomination day concludes. 21 three-way fights confirmed. BN and PN pact holds — no seat overlap. Bersatu confirmed as opposition splitter in 24 seats."},
-    {"timestamp": "2026-07-16 20:00", "summary": "BN announces 25 candidates, leaves 11 seats for PN. Mohamad Hasan defends Rantau."},
-    {"timestamp": "2026-07-14 12:00", "summary": "PH announces 36 candidates. Aminuddin moves from Sikamat to Linggi. Loke defends Chennah."},
-    {"timestamp": "2026-07-11 23:00", "summary": "Johor state election result: BN 48, PH 8, PN 0. Landslide re-anchors NS model priors toward BN swing."},
-    {"timestamp": "2026-06-12 12:00", "summary": "EC fixes NS polling day 1 Aug; nomination 18 Jul; early vote 28 Jul."},
-    {"timestamp": "2026-06-05 00:00", "summary": "NS state assembly dissolved. Royal dispute escalates in parallel."}
+    {
+      "timestamp": "2026-08-02 07:38",
+      "summary": "**⭐ POST-ELECTION ACCURACY REVIEW ⭐** OFFICIAL EC RESULTS: **BN 18, PN 7, PH 11**. BN+PN combined **25 seats** = two-thirds majority. Turnout **72.64%** (646,084 voters — final surge from 65.38% at 4pm). **MODEL SCORECARD: (a) Government direction — CORRECT (BN+PN forms govt, model gave 73% probability). (b) Per-seat accuracy — 30/36 correct (83.3%). (c) Zero within-coalition confusion — all misses were direction. (d) Coalition mean seats: model BN+PN 18.5 vs actual 25 (-6.5 underestimate); model PH 17.5 vs actual 11 (+6.5 overestimate). BIGGEST HITS: Predicted BN+PN government from Day 1 despite Ilham/Ong hedging. Called Aminuddin losing Linggi correctly. Flagged UMNO+PAS Malay consolidation as biggest risk repeatedly. BIGGEST MISSES: 6 PH-called seats flipped — N01 Chennah (Loke lost by 688 votes), N13 Sikamat, N14 Ampangan, N18 Pilah, N25 Paroi, N36 Repah. **Root cause: UMNO+PAS informal cooperation delivered 6pp stronger Malay-vote consolidation than priors captured.** Amanah wiped out (0/7). Bersatu shut out (0/24 own-logo). DAP retained as PH's core (8/11 PH seats). Both dashboard crons will be deleted immediately after this notification. Dashboard now retired."
+    },
+    {
+      "timestamp": "2026-08-01 20:15",
+      "summary": "**POLLING DAY EVENING. Polls closed 6pm. Counting underway.** Model held at BN+PN 73%. **Turnout trajectory:** 8.29% (9am) → 18.22% (10am) → 28.11% (11am) → 37.29% (12pm) → 59.03% (3pm) → **65.38% (4pm)**. Only 3.49pp above 2023 at same 4pm mark. Below EC target 72-75% and IDERC 68-70% band. Final rate likely ~67-70%. **Highest DUNs**: Kota 72.1%, Seri Menanti 70.9%, Labu 70.9% (all Malay-majority, expected BN). **Lowest**: Bahau, Lukut, Lobak stuck at 59% (all non-Malay-majority, PH incumbent). **The Edge unofficial tally at 5pm: BN leading in 9 seats — Pertang, Juasseh, Pilah, Johol, Labu, Rantau, Gemas, Gemencheh, Repah.** All Malay-majority. No PH or PN leads reported yet. **DAP unofficial leads (small samples via DAP live blog)**: Mambau 64% (Lee Kai Yet), Bahau 78% (Teo Kok Seong), Bukit Kepayang 63% (Nicole Tan). **Ong Kian Ming REVISED DOWN** to BN-PN 17 / PH 9 (from yesterday's 23-25) — still a coalition win but tighter than Ilham's 22 projection. Prof Wong Chin Huat similarly forecasts BN-PN win on UMNO+PAS consolidation. **Postal vote counting began 5pm — 12,000 ballots at 8 tallying centres.** Aminuddin + Tok Mat completed voting. No royal-dispute update, no scandal, no incident. Full results expected before midnight per EC. Model held: direction confirmed by early leads."
+    },
+    {
+      "timestamp": "2026-08-01 07:44",
+      "summary": "**POLLING DAY MORNING. Polls open 8am-6pm at 401 centres.** Model held at BN+PN 73%. **Silence-period developments overnight:** (a) **AFP Fact Check confirmed TWO fabricated news graphics** circulating — fake Zahid 'quits Unity Govt' quote (his office denied) + fake EC early-vote count infographic (EC denied 29 Jul on FB). Closing coordinated disinformation event. (b) **MACC opens 4 cash-distribution probes** — 2 involving candidates, 2 voters. Parallel to police's 3 IPs + 72yr-old Tampin TikTok RM300 report. (c) Weather: MetMalaysia clear skies morning across all 7 districts; thunderstorms afternoon in all districts except PD; 23-33°C. EC target 72-75%; independent projections 68-75%. **Anwar final push urged voters to give PH mandate for stability & growth. Zahid: 'high turnout could be game changer for BN'. PH's Amirudin publicly targeted minimum 19 seats.** 867,151 voters, 103 candidates, 36 seats, 401 centres. Early voting 91.06%. Full results expected before midnight per EC; preliminary ~10pm. **26h projections from yesterday (Ilham 22 BN-PN / 9 PH / 5 TCTC; Ong 23-25 BN-PN; IDERC 'too close to call' 68-70% turnout) remain in effect — no new formal opinion poll overnight.**"
+    },
+    {
+      "timestamp": "2026-07-31 19:58",
+      "summary": "**31 Jul evening. Final campaigning day (silence 11.59pm tonight).** Model held at BN+PN 73%. **Two projection releases today:** (a) Ilham Centre: BN-PN 22 / PH 9 / TCTC 5 (Chennah, Linggi, Nilai, Repah, Temiang all with BN) — 'Malay unity, political stability, prevent PH win' named as decisive themes with Malay fence-sitters. (b) IDERC: too close to call, 68-70% turnout, 12-18% undecided, 8 marginals decide. Ong Kian Ming publicly reaffirmed BN-PN 23-25 projection; said Loke at risk in Chennah, Aminuddin at risk in Linggi. Both aligned qualitatively with 73% call. Anwar today: 'forgive and reunite' FB video + Port Dickson Sahabat Usahawan MADANI carnival + 'we've waited long enough' Tabung Haji framing at Kuala Pilah. BN closing night: Wee Ka Siong + Chong Sin Woon at Bukit Pelanduk / Chuah. PN closing 'Biru-kan Port Dickson' held 30 Jul at Batu 8 Teluk Kemang — Tuan Ibrahim demanded TH reform. PH hybrid strategy: house-to-house + aggressive TikTok. Police: 87 reports / 23 IPs / 761 permits approved. Fahmi targets 21-22 PH seats. Ilham/IDERC are pre-election projections without public methodology; treated as confirmatory, not directional."
+    },
+    {
+      "timestamp": "2026-07-31 07:46",
+      "summary": "**31 Jul morning brief. Final campaigning day.** Model held at BN+PN 73% (no new formal poll, no defection, no leader change, no royal-dispute update). Overnight: Anwar's Munajat Perdana sequence completed at Linggi (7.27pm) + Kuala Pilah Dataran Melang (9.15pm) with named sheikhs; PH's most explicit anti-racial-incitement closing pitch. Anwar pledged pondok-schools upgrade allocation after polls (Linggi). PN Ceramah Mega Biru-kan Port Dickson tonight at Batu 8 Teluk Kemang — closing coordinated BN-PN set-piece. Anwar's Tabung Haji framing amplified internationally (SCMP). 3 more vote-buying reports lodged Wed; 689 of 715 permits approved. Zaid Ibrahim skeptical of PH raising Felda + TH pre-poll. Utusan: 'pact must be proven at ballot'. Campaigning silence at 11.59pm tonight. Merdeka/INVOKE/Ilham silent 8+ days. 40 hours to polling."
+    },
+    {
+      "timestamp": "2026-07-30 19:59",
+      "summary": "**30 Jul evening update.** Model held at BN+PN 73%. Two pact-discipline milestones today: (1) **Hadi Awang formally directed PAS members to vote BN candidates in non-PN seats** — first public party-leader directive locking in reciprocity mechanic (Ceramah Mega Biru-kan Seremban context). (2) **Hamzah Zainudin publicly confirmed PN has left NS MB pick to BN** — pact operational discipline explicit, denies rift with BN. Anwar apologised to Indian community 29 Jul at Klana Resort for 'illegal temple' remark — ST frames as 'last-ditch' attempt. Anwar Munajat Perdana tonight at Dataran Melang, Kuala Pilah. Straits Times consensus solidifies: 'most punters predicting third successive state polls loss for Anwar's PH'. Bernama: 4,481 ceramah held across campaign. 318 Johor police mobilised to assist. Model unchanged (no new poll, no defection, no leader change, no royal-dispute update). Campaigning closes tomorrow 11.59pm."
+    },
+    {
+      "timestamp": "2026-07-30 07:41",
+      "summary": "**30 Jul morning brief.** Model held at BN+PN 73% (no new poll, no defection, no leader change). Overnight material: **UMNO's Jempol MP Shamsulkahar Deli also under police probe** (S.505b + S.4A(1) EOA + S.233 CMA) over remarks allegedly linking DAP to Sultan Selangor insult — brings BN into the enforcement spotlight and makes the police-probe narrative symmetric across BN and PN. Zahid publicly backed the vote-buying probe. PH Betaria Grand Finale done (Loke: 'momentum strongest', 75-80% turnout target). Anwar committed to 'personally oversee' Indian community affairs at Klana Resort. Anwar's Kuala Pilah Berselawat tonight (Dataran Melang) with named sheikhs. PH's 24-hour TikTok livestream launches this evening. PN's Biru-kan Seremban Ceramah Mega done 29 Jul night with Hadi/Hamzah/Mukhriz/Sanusi/Khaled/Maslan/Alwi/Dominic Lau. EC debunked viral 'PN leading early votes' infographic — coordinated disinformation now flagged. 48 hours to polling."
+    },
+    {
+      "timestamp": "2026-07-29 19:53",
+      "summary": "**29 Jul evening update.** Model held at BN+PN 73% (no new poll, no defection, no discrete shock). Major event of the day: **Court of Appeal granted the interim stay on the DKU committal proceedings** — 3R royal-dispute vector formally defused for the campaign runway. Case management tomorrow. Anwar's packed schedule: Chennah tea (with Loke), Paroi Temu Anwar, Klana Resort Indian community dinner, Betaria + Desa Cempaka Grand Finale rallies. PH announced a 24-hour non-stop TikTok livestream starting tomorrow evening — first candidate-plus-influencer livestream of this scale in Malaysia. Sanusi LOD campaign hit first recipient (PKR Hulu Selangor Sathia Prakash) with 56k FB likes. Total election-related police reports climbed to 62, IPs 19 (up from 53/16). New: attempted vote-buying via WhatsApp opened as separate S.11 EOA IP. Muhyiddin challenged UMNO to withdraw Selangor support. 68 hours to polling."
+    },
+    {
+      "timestamp": "2026-07-29 07:49",
+      "summary": "**29 Jul morning brief.** Model held at BN+PN 73% (no new poll, no defection, no discrete shock overnight). Confirmatory developments: (1) Early voting closed 91.06% (target 90%) — uniformed lean historically favours BN. (2) Sanusi shifted from defence to counter-attack: filed LOD against PKR Selangor election director Sathia Prakash for defamation, invoked Oliver Stanley (1946), Lord Killearn (1949), Lord Ogmore (1957) as historical basis for 'Tanah Melayu' phrasing. Second police report also confirmed — IP still open under S.505B + S.233 CMA + S.4A(1) EOA. (3) Court of Appeal hears DKU interim stay TODAY. Committal itself fixed for 28 Sept regardless. 72 hours to polling. Munajat Perdana rally with Anwar tomorrow closes PH campaign."
+    },
+    {
+      "timestamp": "2026-07-28 20:02",
+      "summary": "**28 Jul evening update. MODEL RE-RUN.** BN+PN probability moves 68 → 73% after three material developments: (1) PN election director Muhammad Sanusi Md Nor placed under police investigation (S.505B Penal Code + S.233 CMA) over 23 Jul Jempol 'Tanah Melayu' ceramah; (2) DKU committal proceedings adjourned to 28 September; Court of Appeal hears interim stay tomorrow 29 Jul — royal-institution attack vector effectively defused for final 96 hours; (3) BN chairman Zahid publicly reminds parties to respect NS royal institution, aligning BN with Palace and isolating PN on race-religion axis. Priors: BN swing +0.01 across malay-lean seats; PN swing -0.01 across ethnic categories. Model output: BN+PN mean 18.5 seats (17-20 range), PH mean 17.5 (16-19). Still not a comfortable win — knife-edge holds. Early voting 86.4% at 2pm (target 90%). PH-BN pantun theatre in Rantau."
+    },
+    {
+      "timestamp": "2026-07-28 07:50",
+      "summary": "**28 Jul morning brief.** Ong Kian Ming (ex-Bangi DAP MP) published a public projection putting BN-PN at 23-25 seats and PH at 11-13 — first major analyst forecast that clearly calls the winner and comes in ABOVE our model's ~21-seat BN+PN median. He assumes combined BN-PN Malay support >70% via pact-blocked vote splits, and 17 already-safe BN+PN seats. 10 seats flagged as decisive: Chennah, Klawang, Serting, Jeram Padang, Temiang, Sikamat, Ampangan, Linggi, Sri Tanjung, Repah. **Model unchanged** — Ong is analyst opinion, not a new poll. Vodus (PH 42 / BN 35) remains poll anchor. Overnight also: NS police investigating a TikTok video about the royal institution under EOA + Penal Code + CMA (11 police reports). Early voting today (22,339 uniformed/postal); Seremban High Court hears DKU committal + judge-recusal."
+    },
+    {
+      "timestamp": "2026-07-27 20:45",
+      "summary": "27 Jul evening state: Manifesto weekend closed with all three coalitions launched (BN Fri Bandar Sendayan, Bersatu Sat Nilai, PN Sun separate manifesto). Model held at BN+PN 68%. Vodus remained poll anchor. Tok Mat's non-Malay reassurance and Fahmi's 'contest of ideas' framing dominated Sunday. NS Palace formal warning against royal-institution exploitation issued Monday."
+    },
+    {
+      "timestamp": "2026-07-27 20:45",
+      "summary": "**Weekend catch-up update, Day 10 (5 days to polling; early voting tomorrow Tue 28 Jul).** Service outages caused morning and evening crons to skip Thu 23 evening → Sun 26 evening; this entry consolidates 3 days of coverage. **Model held at BN+PN 68%** — no new poll, no defection, no leadership change, no royal-dispute escalation of the type that would trigger a Monte Carlo re-run per protocol. Weekend developments: (1) **Fri 24 Jul — BN manifesto launched at Bandar Sendayan by Zahid.** 9 thrusts, 88 action plans, 15 'Salam Sejahtera' initiatives; theme 'kestabilan dibina, negeri dijaga, rakyat dibela, kemakmuran dicipta'. First thrust: economy (jobs, income growth). 50k-jobs headline positioned above PH's 30k. Delivery-monitoring unit proposed. (2) **Sat 25 Jul — Bersatu manifesto launched at Nilai by Muhyiddin.** 76 pledges, 9 pillars. Standout pledge: enact a law for equal annual allocations to all assemblymen regardless of party (novel anti-incumbent-privilege line, targets BN and PH equally). Muhyiddin: 'if we win 23 seats, all assemblymen will get their allocations.' (3) **Sun 26 Jul — PN manifesto launched, separate from BN's.** PN chairman Samsuri: 'PN Sepakat Hebatkan Negeri Sembilan', 6 pillars. PN opted not to co-author with BN despite the pact — first substantive on-record differentiation between the pact partners. Samsuri also opened door to extending BN-PN cooperation to GE16. NST framing: 'PN 14-point manifesto complements BN's pledges'. (4) **Tok Mat's Chinese-voter reassurance (Sun 26).** 'Non-Malays should not fear being marginalised if BN wins — BN remains the primary decision-maker as majority shareholder in the pact.' 25 BN seats, 5 PAS, 4 Wawasan, 2 others; of BN's 25, 7 to MCA and 2 to MIC. Defensive posture maps onto Vodus's Chinese vote finding (PH 59% vs BN 20%). (5) **Fahmi (Sun): NS polls 'should be contest of ideas, not a stage for racial politics'** — explicit rebuke of race-religion campaigning; positions Anwar administration against wedge tactics. (6) **473 of 499 ceramah permits approved 18-26 Jul** (Bernama/Edge). 33 police reports, 14 investigation papers open. **One paper under Section 435 Penal Code** — mischief by fire (property damage) — first physical-incident case of the campaign. (7) **Royal-dispute legal track: 6 plaintiffs applied to recuse the presiding judge four days before the Tue 28 Jul DKU committal hearing.** (8) **Mon 27 Jul — NS Palace issued formal statement warning against exploiting the royal institution** (The Edge Markets); explicitly denied involvement with any political party. First palace intervention of the campaign. (9) **Anwar returning 30 Jul for Munajat Perdana rally** — PH's closing set-piece. Aminuddin remains PH MB candidate; state Umno chief Jalaluddin Alias is BN's 'top candidate' (unofficial). Sentiment: PH holds Positive across most platforms on the Vodus tailwind, but BN's trust-score narrative (net +45 vs PH +19 vs PN +5) is the compensating variable narrative that has settled in analyst circles."
+    },
+    {
+      "timestamp": "2026-07-23 07:45",
+      "summary": "**Morning brief, Day 6 (9 days to polling). MAJOR MODEL REVISION.** Vodus Research — the single most-accurate GE15 pollster — released the first proper state-level NS public poll overnight (n=437, 9-21 Jul, OMTOS online panel post-stratified to DOSM ethnic/age/gender within seat). **Statewide popular vote: PH 42 · BN 35 · PN 7 · Ind 2 · Undecided 14.** Vodus seat projection: **PH 17 · BN 15 · PN 2 · TCTC 2 — hung**, with neither block at the 19-seat majority; 8 of 10 close seats leaning PH. Model priors re-run: PH swings softened in urban/Chinese/mixed seats (where Vodus shows PH holding), BN Malay-swing kept but at ~50% of Johor magnitude. **New model: BN+PN government-formation 67.8% (down from 95% — a 27pp move). Direct majority BN+PN 42%, PH 32%.** Coalition seat means: PH 17.7 · BN 14.0 · PN 4.3 · BN+PN 18.3. BN+PN still favoured on TCTC efficiency and coalitional plurality in hung outcomes. Concurrent overnight: (1) **PN formally directs members to vote BN in 25 seats** — reciprocal to Zahid's November BN→PN directive; PAS confirmed BN-PN understanding was reached 14 Jul, 4 days before nomination. Full pact discipline complete. (2) **NS Chinese Assembly Hall urges balik-mengundi** — first state-level Chinese civil-society mobilisation call of the campaign. (3) **Bukit Aman deploys 200 security personnel** — Johor peak-campaign scale. (4) **JHEAINS suspends teaching credentials of 8 candidates** per YDPB titah — first titah-level intervention. (5) Fahmi denies media coverage restrictions. (6) Anwar's PH pursuing 'micro-campaigning, stability' (Amirudin framing) — turnout-plus-defence strategy confirmed. Sentiment shifts: PH → Positive/Very Positive across most platforms; BN → Neutral; PN → Negative (their 7% number is the day's most-shared statistic). No new defection, no candidate withdrawal, no royal-dispute escalation beyond the JHEAINS credential move."
+    },
+    {
+      "timestamp": "2026-07-22 19:55",
+      "summary": "**Evening update, Day 5.** No poll, no defection, no candidate withdrawal, no royal escalation — model unchanged at BN+PN 95%. Day's biggest moves: (1) **BN-PN pact acquires a proposed name — PBN (Perikatan Barisan Nasional)** — floated by Wawasan president Hamzah Zainudin at Tampin ceramah (21 Jul), justified as 'many people found PN-BN difficult to say'. Umno NS division heads (Jempol MP Salim Sharif, Seremban chief Mustafa Salim) publicly said 'too early'. Hamzah also placed on record: 'PN agreed since the start that BN leads the coalition and state government' — first public pact-hierarchy statement, useful for BN's MB claim, awkward for PN base. (2) **PAS SG Takiyuddin Hassan explicitly ordered PAS members** in Tampin parliamentary area to vote BN in Gemas (Umno) and Gemencheh (Umno) AND MCA in Repah — strongest pact-discipline directive of the campaign. (3) **Anwar's four-stop swing landed** — Ampangan, Paroi youth, Sikamat unity dinner, Paroi mega ceramah. Speech centred Ampangan river project as PH governance proof; called for fresh mandate for stability. (4) **Amanah VP Mahfuz Omar to Zahid: quit Cabinet if you insist PN cooperation is justified** — first direct PH-side call for BN minister resignation over the pact. (5) Aminuddin doubles down on MB claim: 'not appropriate for Zahid to challenge PM'. (6) Ceramah permits now 173 (up from 141). Religious dept suspended teaching credentials of 8 candidates — procedural, framed as 'respect for democratic process'. Utusan: 'No negotiations to change government' headline (federal denial). No new poll, no defection, no candidate withdrawal."
+    },
+    {
+      "timestamp": "2026-07-22 07:40",
+      "summary": "**Morning brief, Day 5 (10 days to polling).** No new poll, no defection, no candidate withdrawal — model unchanged at BN+PN 95%. Day-defining overnight signals: (1) **Anwar campaigns in NS today** — first PM visit since campaign start, four stops (Ampangan santai 4pm, Paroi youth 5pm, Sikamat unity dinner 8pm, Paroi grand rally). Closes the 'Anwar-absent' vulnerability from Monday's manifesto launch. (2) **Think-tank finding: voters not linking polls with royal dispute** — de-escalates our main wedge-risk item. First published finding on this. (3) **Aminuddin rejects Zahid's sack challenge as 'uncalled for'** — first direct verbal exchange between MB claimants. (4) Zahid softened his 'kalau tak suka, pecat sajalah' line, publicly labelled BN 'underdog' in NS, called for machinery revamp — unusual expectation-management from a 95%-favourite coalition. (5) Straits Times NS-as-Bersatu-last-stand feature; Ilham Centre puts Bersatu at 10-13% vote in urban/semi-urban (Paroi, Klawang, Lenggeng) — within our working range. (6) Local FMT columnist reminded readers the polls trace to the 14-Adun crisis over Yang di-Pertuan Besar / Undang institutional dispute — keeps the royal wedge on the record even as voters reportedly disengage. (7) 103 candidates confirmed across 36 seats: PH 36 / BN 25 / Bersatu 24 / PN 11 / Berjasa 1 / PSM 1 / ASLI 1 / independents 4."
+    },
+    {
+      "timestamp": "2026-07-21 19:57",
+      "summary": "**Evening update, Day 4.** No poll, no defection, no candidate withdrawal — model unchanged at BN+PN 95%. Key day's moves: (1) **BN counter-punches on substance.** Zahid pre-announced BN's manifesto (formal launch Fri 24 Jul) with 50,000-jobs pledge — explicitly positioned above PH's 30k. Closes the manifesto-vacuum window PH opened last night. (2) **Hadi Awang frames PAS as BN's 'attacking force'** in NS (via The Edge) — strongest public pact-unity signal since nomination day, kills residual PN-drift narrative. (3) PH set explicit **80% turnout target** — aspirational (above Johor's ~72-74%), doubles as ground-game rallying number. (4) 141 of 143 ceramah permits approved 18-20 Jul; 4 election-offence probes open. (5) Analyst frame surfaced: **Linggi, Ampangan, Chennah, Pertang** are top 4 battleground seats. (6) Khairy Jamaluddin: pact is 'to remind PH not to overreach' — pact-as-leverage framing. (7) PSM Rahang launched five-pillar manifesto with RM500 senior monthly pension. (8) Rumoured BN/PN/GPS/GRS coalition meeting circulated on social media — Zahid denied. (9) MCA NS chief Leaw Kok Chan campaigning Temiang, MCA emphasises 20-year local service by Bahau candidate Chong Fui Ming."
+    },
+    {
+      "timestamp": "2026-07-21 12:27",
+      "summary": "**New section 13 · Strategic playbook per party.** Added a decision-tree recommendation block for BN, PH, PN and Bersatu — each with base case, to-win moves, and failure modes. Recommendations synthesised from this dashboard's own signals: demographic leans (Malay 58 BN/PN, Chinese 74 PH, semi-urban 51 BN, urban 62 PH), on-platform sentiment (10 platforms + community signals), candidate ground game (Aminuddin's Linggi walkabout, Loke vs MCA in Chennah, Tok Mat's Sunday grind, Tun Faisal in Sikamat), Johor precedent (55% Chinese turnout being the pact's structural gift), pact dynamics (Zahid MB claim, Umno needling Bersatu), and momentum (PH manifesto substance vs BN counter-frame timing). No model change."
+    },
+    {
+      "timestamp": "2026-07-21 10:55",
+      "summary": "**Schema expansion + fresh sweep, Day 4.** Sentiment block expanded from 6 platforms to 10: added Instagram, YouTube, Blogs, Podcasts (previously missing) alongside X, Facebook, TikTok, Threads, Reddit, Telegram. New **community_signals** block tracks ceramah attendance, ground-report journalists, party-ops signals, WhatsApp-as-reported, and editorial columns. All entries tagged **[direct]** (freshly sampled) vs **[inferred]** (pattern-matched, not directly verified). Coordinated flags now carry the same tag. Added Newswav third-party analyst projection to Polls block (BN+PN 50% / PH 35% / hung 15% — explicit counter-anchor to our model). Also flagged AFP fact-check event: months-old Anwar clip being misrepresented as reaction to Johor."
+    },
+    {
+      "timestamp": "2026-07-21 07:40",
+      "summary": "**Morning brief, Day 4.** No new polls, no defections, no candidate withdrawals — model unchanged at BN+PN 95%. Overnight was PH's biggest set-piece of the campaign: (1) PH manifesto launched at Hotel Kelana Resort Seremban — 10 commitments themed 'Kekal Harapan' (Stability, Prosperity, Inclusivity), headlined by 30,000 high-paying jobs, 20,000 affordable homes, RM200 SSPN newborn bonus, MVV 2.0 rebrand, NS Semiconductor Valley, Nilai AI Photonics Manufacturing City, and 5 high-impact federal-state projects (Seremban Sentral, Hospital Enstek, PD International Port, Senawang-PK bypass, Felda 2nd-gen housing). (2) MP Chean Chung publicly said reformasi is dead in PH — first named internal DAP dissent of the campaign, widely reshared. (3) Fahmi Fadzil softened Anwar's Sunday minister-warning to 'discipline, not resignation'. (4) Umno's Marzuki needled Muhyiddin ('history shows Umno toppled PN govt'). (5) Loke: 'DAP must win all 11 seats' to hit 23-target. (6) BN still has NO manifesto — expected mid-week. (7) Emerging coordinated BN-aligned amplification calling PH manifesto '2018 janji manis'. Momentum shifted PH-neutral (from negative) for the first time since Day 1."
+    },
+    {
+      "timestamp": "2026-07-20 20:10",
+      "summary": "**Evening update, Day 3.** Model unchanged at BN+PN 95%. Zahid publicly claimed BN's MB post if pact wins (BN 25 > PN 11). PH manifesto set for Monday night fronted by Aminuddin, not Anwar. Anwar spent day in Ipoh at flag/'unity' launch. 107 ceramah permits approved; two election-offence probes opened over PH-material vandalism. Postal-ballot count 13,263. Wee (MCA) disciplined response to Loke. Sinar Harian frame: 'PH sells performance, BN–PN chants Malay-Islamic unity'."
+    },
+    {
+      "timestamp": "2026-07-20 07:40",
+      "summary": "**Morning brief, Day 3.** No new polls, no defections, no candidate withdrawals — model unchanged at BN+PN 95%. Overnight signals: (1) Loke set PH's explicit target at 23 seats (17 held + 6 gains) — first public benchmark, reads as expectation-management. (2) Tok Mat reciprocated pact-loyalty with 'I'd resign if PM ordered it'. (3) Umno rebuffed PH Youth's demand for BN ministers to quit. (4) Umno NS chief pushed back on 'derhaka' framing in Utusan. (5) Police approved 19 ceramah permits since nomination day — weekday campaign tempo starts today."
+    },
+    {
+      "timestamp": "2026-07-19 19:58",
+      "summary": "**Evening update, Day 2.** No new polls, no defections — model unchanged at BN+PN 95%. Key movements: (1) Anwar publicly warned federal ministers to quit if they attack unity-govt allies. (2) MCA vacated Lobak/Mambau/Lukut for PN candidates — Loke framed as boost to DAP firewall. (3) Onn Hafiz Ghazi (Johor MB) campaigning in Tampin/Juasseh, forced to rebut 'BN betrayed the palace' framing — royal-dispute risk upgraded to HIGH impact. (4) Hamzah publicly rebuked Muhyiddin — Bersatu-PN unity narrative dead. (5) PH manifesto set for 20 Jul night, 'continuity' framing."
+    },
+    {
+      "timestamp": "2026-07-19 10:50",
+      "summary": "Baseline forecast v1.0 initialised. BN+PN probability 95%. Field structure locked at nomination day (103 candidates, PH 36, BN 25, PN 11, Bersatu 24, others 7). 12 days to polling."
+    },
+    {
+      "timestamp": "2026-07-18 10:00",
+      "summary": "Nomination day concludes. 21 three-way fights confirmed. BN and PN pact holds — no seat overlap. Bersatu confirmed as opposition splitter in 24 seats."
+    },
+    {
+      "timestamp": "2026-07-16 20:00",
+      "summary": "BN announces 25 candidates, leaves 11 seats for PN. Mohamad Hasan defends Rantau."
+    },
+    {
+      "timestamp": "2026-07-14 12:00",
+      "summary": "PH announces 36 candidates. Aminuddin moves from Sikamat to Linggi. Loke defends Chennah."
+    },
+    {
+      "timestamp": "2026-07-11 23:00",
+      "summary": "Johor state election result: BN 48, PH 8, PN 0. Landslide re-anchors NS model priors toward BN swing."
+    },
+    {
+      "timestamp": "2026-06-12 12:00",
+      "summary": "EC fixes NS polling day 1 Aug; nomination 18 Jul; early vote 28 Jul."
+    },
+    {
+      "timestamp": "2026-06-05 00:00",
+      "summary": "NS state assembly dissolved. Royal dispute escalates in parallel."
+    }
   ]
 }

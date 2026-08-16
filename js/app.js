@@ -92,7 +92,7 @@ function renderMeta(model, intel) {
 
 function renderExec(intel) {
   const e = intel.executive;
-  const winner = e.predicted_winner_short || e.predicted_winner;
+  const winner = e.predicted_winner_short || e.predicted_winner || 'BN+PN';
   const headlineHtml = e.headline
     ? `<span class="muted small" style="display:inline-block;margin-left:6px;">${e.headline}</span>`
     : '';
@@ -210,7 +210,19 @@ function renderSentiment(intel) {
   const wrap = $('#sentiment-grid'); wrap.innerHTML = '';
   for (const s of intel.sentiment) {
     const c = el('div', 'sentiment-cell');
-    c.appendChild(el('div', 'sentiment-platform', s.platform));
+    // Platform header with confidence tag
+    const head = el('div', 'sentiment-platform');
+    head.textContent = s.platform;
+    if (s.tag) {
+      const tag = document.createElement('span');
+      tag.textContent = ' ' + s.tag;
+      tag.className = 'xs';
+      tag.style.marginLeft = '4px';
+      tag.style.fontWeight = '400';
+      tag.style.color = (s.tag && s.tag.indexOf('direct') >= 0) ? 'var(--color-good, #2e7d32)' : 'var(--color-warn, #c77700)';
+      head.appendChild(tag);
+    }
+    c.appendChild(head);
     for (const p of ['PH','BN','PN','BERSATU']) {
       const r = el('div', 'sentiment-row');
       const l = el('span'); l.appendChild(partyBadge(p));
@@ -223,13 +235,38 @@ function renderSentiment(intel) {
     c.appendChild(note);
     wrap.appendChild(c);
   }
-  // Coordinated flags in callout
+
+  // Remove any previously rendered extras (community signals + coord flags) so re-renders don't duplicate
+  const parent = wrap.parentElement;
+  parent.querySelectorAll('.__sentiment-extra').forEach(n => n.remove());
+
+  // Community signals block
+  const community = intel.community_signals || [];
+  if (community.length) {
+    const cbox = el('div', 'callout __sentiment-extra');
+    cbox.style.marginTop = '16px';
+    let html = '<strong>Community & ground signals:</strong><br>';
+    html += '<div style="margin-top:8px;display:grid;gap:6px">';
+    for (const cs of community) {
+      const sig = (cs.signal || '').toLowerCase();
+      let color = 'var(--color-muted)';
+      if (sig === 'bn' || sig === 'ph' || sig === 'pn') color = 'var(--color-strong, currentColor)';
+      if (sig === 'mixed') color = 'var(--color-warn, #c77700)';
+      if (sig === 'unclear') color = 'var(--color-muted)';
+      html += '<div style="display:flex;gap:8px;align-items:flex-start"><span style="min-width:80px;font-weight:600;color:' + color + '">' + (cs.signal || '—') + '</span><span><strong>' + cs.channel + '</strong> — ' + cs.note + '</span></div>';
+    }
+    html += '</div>';
+    cbox.innerHTML = html;
+    parent.appendChild(cbox);
+  }
+
+  // Coordinated flags callout
   const flagsHtml = (intel.coordinated_flags || []).map(f => '• ' + f).join('<br>');
   if (flagsHtml) {
-    const flagBox = el('div', 'callout');
+    const flagBox = el('div', 'callout __sentiment-extra');
     flagBox.style.marginTop = '16px';
-    flagBox.innerHTML = '<strong>Coordinated activity flags:</strong><br>' + flagsHtml;
-    wrap.parentElement.appendChild(flagBox);
+    flagBox.innerHTML = '<strong>Coordinated activity flags:</strong><br><span class="xs muted">Each entry tagged <em>[direct]</em> (freshly sampled), <em>[inferred]</em> (pattern-matched, not verified) or <em>[verified]</em> (confirmed by named source).</span><br><br>' + flagsHtml;
+    parent.appendChild(flagBox);
   }
 }
 
@@ -358,6 +395,98 @@ function renderMarkets(intel) {
   }
 }
 
+function renderPlaybook(intel) {
+  const wrap = $('#playbook-list'); if (!wrap) return; wrap.innerHTML = '';
+  const items = intel.strategic_playbook || [];
+  const partyColors = {
+    PH: 'var(--color-ph, #dc3232)',
+    BN: 'var(--color-bn, #1e4d9b)',
+    PN: 'var(--color-pn, #0a4d38)',
+    BERSATU: 'var(--color-bersatu, #b6403c)',
+    Bersatu: 'var(--color-bersatu, #b6403c)'
+  };
+  for (const p of items) {
+    const card = el('div', 'callout');
+    card.style.marginBottom = '16px';
+    card.style.borderLeft = '4px solid ' + (partyColors[p.party] || 'currentColor');
+
+    const head = el('div');
+    head.style.display = 'flex';
+    head.style.alignItems = 'baseline';
+    head.style.gap = '10px';
+    head.style.marginBottom = '6px';
+    head.style.flexWrap = 'wrap';
+    const name = el('span');
+    name.style.fontSize = 'var(--text-lg, 18px)';
+    name.style.fontWeight = '700';
+    name.style.color = partyColors[p.party] || 'currentColor';
+    name.textContent = p.party;
+    const posture = el('span', 'small muted', p.posture || '');
+    head.append(name, posture);
+    card.appendChild(head);
+
+    if (p.base_case) {
+      const bc = el('div', 'xs muted');
+      bc.style.marginBottom = '12px';
+      bc.innerHTML = '<strong>Base case:</strong> ' + p.base_case;
+      card.appendChild(bc);
+    }
+
+    const grid = el('div');
+    grid.style.display = 'grid';
+    grid.style.gridTemplateColumns = 'repeat(auto-fit, minmax(280px, 1fr))';
+    grid.style.gap = '14px';
+
+    // To-win column
+    const winCol = el('div');
+    const winHead = el('div');
+    winHead.style.fontWeight = '600';
+    winHead.style.fontSize = 'var(--text-sm, 14px)';
+    winHead.style.color = 'var(--color-good, #2e7d32)';
+    winHead.style.marginBottom = '6px';
+    winHead.textContent = '→ To win';
+    winCol.appendChild(winHead);
+    const winList = el('ul');
+    winList.style.paddingLeft = '18px';
+    winList.style.margin = '0';
+    winList.style.display = 'flex';
+    winList.style.flexDirection = 'column';
+    winList.style.gap = '6px';
+    for (const line of (p.to_win || [])) {
+      const li = el('li', 'small');
+      li.textContent = line;
+      winList.appendChild(li);
+    }
+    winCol.appendChild(winList);
+
+    // Failure column
+    const failCol = el('div');
+    const failHead = el('div');
+    failHead.style.fontWeight = '600';
+    failHead.style.fontSize = 'var(--text-sm, 14px)';
+    failHead.style.color = 'var(--color-bad, #c62828)';
+    failHead.style.marginBottom = '6px';
+    failHead.textContent = '✗ If they don’t';
+    failCol.appendChild(failHead);
+    const failList = el('ul');
+    failList.style.paddingLeft = '18px';
+    failList.style.margin = '0';
+    failList.style.display = 'flex';
+    failList.style.flexDirection = 'column';
+    failList.style.gap = '6px';
+    for (const line of (p.failure_mode || [])) {
+      const li = el('li', 'small');
+      li.textContent = line;
+      failList.appendChild(li);
+    }
+    failCol.appendChild(failList);
+
+    grid.append(winCol, failCol);
+    card.appendChild(grid);
+    wrap.appendChild(card);
+  }
+}
+
 function renderChangelog(intel) {
   const wrap = $('#changelog-list'); wrap.innerHTML = '';
   for (const c of intel.changelog) {
@@ -393,7 +522,7 @@ function renderExecutiveDetails(intel) {
     li.textContent = w;
     wl.appendChild(li);
   }
-  $('#projected-seats').textContent = intel.executive.probability_pct + '% · ' + intel.executive.predicted_winner_short;
+  $('#projected-seats').textContent = intel.executive.probability_pct + '% · ' + (intel.executive.predicted_winner_short || 'BN+PN');
 }
 
 // ---------- Master render ----------
@@ -414,6 +543,7 @@ async function render() {
     renderRisks(intel);
     renderPolls(intel);
     renderMarkets(intel);
+    renderPlaybook(intel);
     renderChangelog(intel);
     renderExecutiveDetails(intel);
   } catch (err) {

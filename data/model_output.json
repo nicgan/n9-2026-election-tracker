@@ -1,32 +1,32 @@
 {
   "meta": {
-    "generated_at": "2026-07-19T10:50:39.065824+08:00",
+    "generated_at": "2026-07-28T20:00:27.065388+08:00",
     "polling_day": "2026-08-01",
-    "days_to_polling": 12,
+    "days_to_polling": 3,
     "swing_vs_2023": {
       "PH": {
-        "malay_rural": -0.1,
-        "malay_majority": -0.08,
-        "mixed_malay": -0.05,
-        "mixed_chinese": -0.02,
-        "chinese_majority": -0.03,
-        "indian_influence": -0.02
+        "malay_rural": -0.08,
+        "malay_majority": -0.06,
+        "mixed_malay": -0.02,
+        "mixed_chinese": 0.01,
+        "chinese_majority": 0.0,
+        "indian_influence": 0.01
       },
       "BN": {
         "malay_rural": 0.05,
-        "malay_majority": 0.08,
-        "mixed_malay": 0.06,
-        "mixed_chinese": 0.04,
-        "chinese_majority": 0.03,
-        "indian_influence": 0.04
+        "malay_majority": 0.07,
+        "mixed_malay": 0.05,
+        "mixed_chinese": 0.02,
+        "chinese_majority": 0.02,
+        "indian_influence": 0.02
       },
       "PN": {
-        "malay_rural": -0.02,
-        "malay_majority": -0.01,
-        "mixed_malay": -0.03,
-        "mixed_chinese": -0.02,
-        "chinese_majority": -0.02,
-        "indian_influence": -0.02
+        "malay_rural": -0.03,
+        "malay_majority": -0.02,
+        "mixed_malay": -0.04,
+        "mixed_chinese": -0.03,
+        "chinese_majority": -0.03,
+        "indian_influence": -0.03
       },
       "BERSATU": {
         "malay_rural": 0.04,
@@ -37,42 +37,53 @@
         "indian_influence": 0.02
       }
     },
-    "regional_swing_sd": 0.03,
-    "seat_specific_sd": 0.04,
+    "regional_swing_sd": 0.035,
+    "seat_specific_sd": 0.045,
     "incumbent_bonus": 0.02,
     "star_bonus": 0.03,
-    "n_simulations": 10000
+    "n_simulations": 10000,
+    "final_scored": true,
+    "final_notes": "SCORED 2 Aug 07:36 MYT. Per-seat accuracy 30/36 (83.3%). Government direction correct. BN+PN mean 18.5 vs actual 25. Direction misses: N01 Chennah, N13 Sikamat, N14 Ampangan, N18 Pilah, N25 Paroi, N36 Repah — all PH called, all flipped BN/PN.",
+    "actual_results": {
+      "BN": 18,
+      "PN": 7,
+      "PH": 11,
+      "BN+PN": 25,
+      "turnout_pct": 72.64,
+      "turnout_voters": 646084,
+      "two_thirds": true
+    }
   },
   "government_probability": {
-    "PH": 0.0487,
-    "BN+PN": 0.9513,
+    "PH": 0.2684,
+    "BN+PN": 0.7316,
     "Hung/Other": 0.0
   },
   "coalition_seat_stats": {
     "PH": {
-      "mean": 16.1677,
-      "median": 16,
-      "p10": 14,
-      "p90": 18,
-      "min": 12,
-      "max": 20,
-      "p_majority": 0.0487
+      "mean": 17.5431,
+      "median": 18,
+      "p10": 16,
+      "p90": 19,
+      "min": 13,
+      "max": 22,
+      "p_majority": 0.2684
     },
     "BN": {
-      "mean": 15.2303,
-      "median": 15,
-      "p10": 14,
+      "mean": 14.2318,
+      "median": 14,
+      "p10": 13,
       "p90": 16,
-      "min": 12,
+      "min": 11,
       "max": 18,
       "p_majority": 0.0
     },
     "PN": {
-      "mean": 4.602,
+      "mean": 4.2251,
       "median": 4,
       "p10": 4,
-      "p90": 6,
-      "min": 4,
+      "p90": 5,
+      "min": 3,
       "max": 7,
       "p_majority": 0.0
     },
@@ -95,13 +106,13 @@
       "p_majority": 0.0
     },
     "BN+PN": {
-      "mean": 19.8323,
-      "median": 20,
-      "p10": 18,
-      "p90": 22,
-      "min": 16,
-      "max": 24,
-      "p_majority": 0.8423
+      "mean": 18.4569,
+      "median": 18,
+      "p10": 17,
+      "p90": 20,
+      "min": 14,
+      "max": 23,
+      "p_majority": 0.4817
     }
   },
   "seats": [
@@ -224,10 +235,11 @@
         }
       ],
       "probs": {
-        "PN": 1.0
+        "PN": 0.9979,
+        "PH": 0.0021
       },
       "leader": "PN",
-      "leader_prob": 1.0,
+      "leader_prob": 0.9979,
       "classification": "Safe"
     },
     {
@@ -325,12 +337,12 @@
         }
       ],
       "probs": {
-        "BN": 0.7908,
-        "PH": 0.2092
+        "BN": 0.5216,
+        "PH": 0.4784
       },
       "leader": "BN",
-      "leader_prob": 0.7908,
-      "classification": "Likely"
+      "leader_prob": 0.5216,
+      "classification": "Toss-up"
     },
     {
       "code": "N08",
@@ -386,12 +398,12 @@
         }
       ],
       "probs": {
-        "BN": 0.8008,
-        "PH": 0.1992
+        "BN": 0.5238,
+        "PH": 0.4762
       },
       "leader": "BN",
-      "leader_prob": 0.8008,
-      "classification": "Likely"
+      "leader_prob": 0.5238,
+      "classification": "Toss-up"
     },
     {
       "code": "N10",
@@ -521,12 +533,12 @@
         }
       ],
       "probs": {
-        "PH": 0.8357,
-        "PN": 0.1643
+        "PH": 0.9375,
+        "PN": 0.0625
       },
       "leader": "PH",
-      "leader_prob": 0.8357,
-      "classification": "Likely"
+      "leader_prob": 0.9375,
+      "classification": "Safe"
     },
     {
       "code": "N14",
@@ -554,12 +566,12 @@
         }
       ],
       "probs": {
-        "PN": 0.1536,
-        "PH": 0.8464
+        "PH": 0.9474,
+        "PN": 0.0526
       },
       "leader": "PH",
-      "leader_prob": 0.8464,
-      "classification": "Likely"
+      "leader_prob": 0.9474,
+      "classification": "Safe"
     },
     {
       "code": "N15",
@@ -678,11 +690,11 @@
         }
       ],
       "probs": {
-        "BN": 0.6674,
-        "PH": 0.3326
+        "BN": 0.3806,
+        "PH": 0.6194
       },
-      "leader": "BN",
-      "leader_prob": 0.6674,
+      "leader": "PH",
+      "leader_prob": 0.6194,
       "classification": "Lean"
     },
     {
@@ -738,10 +750,11 @@
         }
       ],
       "probs": {
-        "BN": 1.0
+        "BN": 0.9993,
+        "PH": 0.0007
       },
       "leader": "BN",
-      "leader_prob": 1.0,
+      "leader_prob": 0.9993,
       "classification": "Safe"
     },
     {
@@ -898,12 +911,12 @@
         }
       ],
       "probs": {
-        "PN": 0.2841,
-        "PH": 0.7159
+        "PH": 0.8879,
+        "PN": 0.1121
       },
       "leader": "PH",
-      "leader_prob": 0.7159,
-      "classification": "Lean"
+      "leader_prob": 0.8879,
+      "classification": "Likely"
     },
     {
       "code": "N26",
@@ -954,12 +967,12 @@
         }
       ],
       "probs": {
-        "BN": 0.9607,
-        "PH": 0.0393
+        "BN": 0.8047,
+        "PH": 0.1953
       },
       "leader": "BN",
-      "leader_prob": 0.9607,
-      "classification": "Safe"
+      "leader_prob": 0.8047,
+      "classification": "Likely"
     },
     {
       "code": "N28",
@@ -1111,10 +1124,11 @@
         }
       ],
       "probs": {
-        "BN": 1.0
+        "BN": 0.9991,
+        "PH": 0.0009
       },
       "leader": "BN",
-      "leader_prob": 1.0,
+      "leader_prob": 0.9991,
       "classification": "Safe"
     },
     {
@@ -1153,11 +1167,11 @@
         }
       ],
       "probs": {
-        "PH": 0.9959,
-        "BN": 0.0041
+        "PH": 0.9992,
+        "BN": 0.0008
       },
       "leader": "PH",
-      "leader_prob": 0.9959,
+      "leader_prob": 0.9992,
       "classification": "Safe"
     },
     {
@@ -1240,11 +1254,11 @@
         }
       ],
       "probs": {
-        "PH": 0.9935,
-        "BN": 0.0065
+        "PH": 0.9981,
+        "BN": 0.0019
       },
       "leader": "PH",
-      "leader_prob": 0.9935,
+      "leader_prob": 0.9981,
       "classification": "Safe"
     }
   ]

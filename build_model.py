@@ -235,26 +235,42 @@ MODEL_PARAMS = {
     "days_to_polling": (datetime(2026,8,1) - datetime.now()).days,
     # Coalition-wide swing vs 2023 (in vote-share points)
     # Positive = gain vs 2023. Applied differently by ethnic seat type.
+    #
+    # UPDATED 23 Jul (Day 6): Vodus Research 437-sample poll (9-21 Jul) published
+    # 22 Jul night. Statewide popular vote: PH 42, BN 35, PN 7, undecided 14.
+    # Seat projection PH 17 / BN 15 / PN 2 / TCTC 2 — hung. Priors softened to
+    # reflect PH holding urban/Chinese and mixed seats better than Johor spillover
+    # implied. BN Malay gain still real but ~50% smaller than Johor swing.
+    # Small NS sample (437 vs Vodus Johor 1,303) — kept some Johor anchor.
+    #
+    # UPDATED 28 Jul evening (Day 11 — early voting day):
+    # 1) PN election director Muhammad Sanusi Md Nor is now under police
+    #    investigation over 23 Jul Jempol 'Tanah Melayu' remarks (S.505B Penal Code
+    #    + S.233 CMA, 2 police reports, IP opened). BN chairman Zahid publicly
+    #    disciplined the remarks and reminded parties to respect the royal
+    #    institution. NS Palace issued formal statement Monday distancing itself
+    #    from parties. Early voting turnout 86%+ at 2pm — uniformed vote historically
+    #    leans BN.
+    # 2) DKU committal proceedings ADJOURNED to 28 Sept, effectively removing the
+    #    royal-institution attack vector PN had been leaning on for the final
+    #    96 hours.
+    # 3) Ong Kian Ming (analyst) forecast BN-PN 23-25 seats yesterday — analyst
+    #    tier signal, not poll.
+    # Net: PN swing -0.01 across ethnic types (leadership damage + defused vector).
+    # BN swing +0.01 across malay-lean seats (Zahid discipline win + uniformed vote).
     "swing_vs_2023": {
-        # In 2023, PH+BN ran together. We split their 2023 combined vote
-        # roughly 60/40 (PH/BN) as base, then apply 2026 swing.
-        # 2026 swing driven by:
-        #  - Johor spillover (BN swept 48/56, PH crushed to 8, PN wiped out)
-        #  - Royal dispute drag on federal PH+Umno govt (mixed)
-        #  - Cost of living pressure (moderate anti-incumbent)
-        #  - Bersatu 3rd party siphoning ~5-8% Malay vote from PN/BN
-        "PH": {"malay_rural": -0.10, "malay_majority": -0.08, "mixed_malay": -0.05,
-               "mixed_chinese": -0.02, "chinese_majority": -0.03, "indian_influence": -0.02},
-        "BN": {"malay_rural": +0.05, "malay_majority": +0.08, "mixed_malay": +0.06,
-               "mixed_chinese": +0.04, "chinese_majority": +0.03, "indian_influence": +0.04},
-        "PN": {"malay_rural": -0.02, "malay_majority": -0.01, "mixed_malay": -0.03,
-               "mixed_chinese": -0.02, "chinese_majority": -0.02, "indian_influence": -0.02},
+        "PH": {"malay_rural": -0.08, "malay_majority": -0.06, "mixed_malay": -0.02,
+               "mixed_chinese": +0.01, "chinese_majority": +0.00, "indian_influence": +0.01},
+        "BN": {"malay_rural": +0.05, "malay_majority": +0.07, "mixed_malay": +0.05,
+               "mixed_chinese": +0.02, "chinese_majority": +0.02, "indian_influence": +0.02},
+        "PN": {"malay_rural": -0.03, "malay_majority": -0.02, "mixed_malay": -0.04,
+               "mixed_chinese": -0.03, "chinese_majority": -0.03, "indian_influence": -0.03},
         "BERSATU": {"malay_rural": +0.04, "malay_majority": +0.03, "mixed_malay": +0.03,
                     "mixed_chinese": +0.02, "chinese_majority": +0.01, "indian_influence": +0.02},
     },
     # Simulation params
-    "regional_swing_sd": 0.03,      # coalition-wide swing std dev
-    "seat_specific_sd": 0.04,       # seat-level idiosyncratic noise
+    "regional_swing_sd": 0.035,     # coalition-wide swing std dev (widened for poll uncertainty)
+    "seat_specific_sd": 0.045,      # seat-level idiosyncratic noise (widened)
     "incumbent_bonus": 0.02,
     "star_bonus": 0.03,
     "n_simulations": 10000,
